@@ -1,0 +1,66 @@
+#header {
+  height: 48px;
+  width: 100%;
+  background: #404040;
+  color: #fff; }
+  #header .content {
+    line-height: 48px; }
+    #header .content a {
+      color: #fff; }
+    #header .content img {
+      display: block; }
+    #header .content .tel {
+      margin-left: 80px; }
+      #header .content .tel img {
+        width: 26px;
+        margin-top: 10px; }
+    #header .content .mail {
+      margin-left: 80px; }
+      #header .content .mail img {
+        width: 28px;
+        margin-top: 15px; }
+    #header .content .loginAndRegister img {
+      margin-top: 16px; }
+
+#footer {
+  height: 266px;
+  width: 100%;
+  background: #404040;
+  color: #fff; }
+  #footer .content ul {
+    padding: 40px 0 0 130px; }
+    #footer .content ul li {
+      float: left;
+      margin-left: 110px; }
+      #footer .content ul li a {
+        color: #fff;
+        font-size: 18px; }
+    #footer .content ul li:first-child {
+      margin-left: 0; }
+  #footer .content .content_bottom {
+    padding: 0 0 0 130px; }
+    #footer .content .content_bottom .content_bottom_l {
+      margin-top: 50px; }
+      #footer .content .content_bottom .content_bottom_l h5 {
+        font-size: 20px; }
+      #footer .content .content_bottom .content_bottom_l span {
+        display: block;
+        margin-top: 30px;
+        font-size: 16px; }
+    #footer .content .content_bottom .content_bottom_c {
+      margin-top: 50px;
+      margin-right: 80px; }
+      #footer .content .content_bottom .content_bottom_c h5 {
+        font-size: 20px; }
+      #footer .content .content_bottom .content_bottom_c span {
+        display: block;
+        margin-top: 30px;
+        font-size: 16px; }
+      #footer .content .content_bottom .content_bottom_c i {
+        display: block;
+        font-size: 16px; }
+    #footer .content .content_bottom img {
+      display: block;
+      margin: 25px 60px 0 0; }
+
+/*# sourceMappingURL=index.css.map */

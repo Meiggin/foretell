@@ -1,0 +1,92 @@
+#header{
+    height:48px;
+    width:100%;
+    background: #404040;
+    color: #fff;
+    .content{
+        line-height: 48px;
+        a{
+            color: #fff;
+        }
+        img{
+            display: block;
+        }
+        .tel{
+            margin-left:80px;
+            img{
+                width:26px;
+                margin-top:10px;
+            }
+        }
+        .mail{
+            margin-left:80px;
+            img{
+                width:28px;
+                margin-top:15px;
+            }
+        }
+        .loginAndRegister{
+            img{
+                margin-top:16px;
+            }
+        }
+    }
+}
+#footer{
+    height:266px;
+    width:100%;
+    background: #404040;
+    color: #fff;
+    .content{   
+        ul{
+            padding: 40px 0 0 130px;
+            li{
+                float: left;
+                margin-left:110px;
+                a{
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+            li:first-child{
+                margin-left:0;
+            }
+        }
+        .content_bottom{
+            padding: 0 0 0 130px;
+            .content_bottom_l{
+                margin-top:50px;
+                h5{
+                    font-size: 20px;
+                    
+                }
+                span{
+                    display: block;
+                    margin-top:30px;
+                    font-size: 16px;
+                }
+            }
+            .content_bottom_c{
+                margin-top:50px;
+                margin-right:80px;
+                h5{
+                    font-size: 20px;
+                    
+                }
+                span{
+                    display: block;
+                    margin-top:30px;
+                    font-size: 16px;
+                }
+                i{
+                    display: block;
+                    font-size: 16px;
+                }
+            }
+            img{
+                display: block;
+                margin:25px 60px 0 0;
+            }
+        }
+    }
+}
