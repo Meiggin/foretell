@@ -68,18 +68,62 @@
     <!-- 内容 -->
     <div id="home_page">
         <div class="banner_wrap">
-            <div class="meiggin">
-                <h1>先知精英</h1>
-                <p>The elites of the prophet</p>
-                <div>
-    
+            <div class="meiggin banner clear">
+                <div class="banner_text clear">
+                    <h1> 先 知 精 英 </h1>
+                    <p class="banner_text_p margin-top-15">The elites of the prophet</p>
+                    <div class="banner_case">
+                        <span class="banner_case_sky">391408</span>
+                        <span class="banner_case_white">注册精英</span>
+                    </div>
+                    <p class="banner_text_p2 margin-top-20">
+                        已有
+                        <span>146720</span>
+                        学院通过网站
+                        <span>找到先知</span>
+                    </p>
                 </div>
             </div>
             
         </div>
+        <div class="skill_wrap meiggin">
+            <h2>先 知 技 能</h2>
+            <ul class="skill_tabs_tag clear">
+                <li class="margin-left-20 active">
+                    保研全程指导
+                </li>
+                <li>
+                    考研指导
+                </li>
+                <li>
+                    论文指导
+                </li>
+                <li>
+                    专利指导
+                </li>
+                <li>
+                    专家推荐信
+                </li>
+                <li>
+                    入营论文
+                </li>
+                <li>
+                    学习指导
+                </li>
+                <li>
+                    参赛指导
+                </li>
+                <li>
+                    奖学金指导
+                </li>
+            </ul>
+            <ul>
+                
+            </ul>
+        </div>
     </div>
     <!-- 页脚 -->
-    <div id="footer">
+    <div id="footer" class="margin-top-10">
         <div class="meiggin content">
             <ul class="clear">
                 <li class="margin-left-0">
@@ -128,5 +172,15 @@
             </div>
         </div>
     </div>
+    <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            
+            $('.skill_tabs_tag li').on('click',function(){
+                $(this).addClass('active').siblings('.skill_tabs_tag li').removeClass('active')
+            })
+        })
+    </script>
 </body>
 </html>
