@@ -5,10 +5,14 @@ fine
 ## 4.20
 * register 
     > finish
-    
+
 * login 
+    > finish
 
 * index 
+    > in progress
+
+* teacher
 
 * intro 
 

@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="renderer" content="webkit">
-        <title>先知首页</title>
+        <title>登陆</title>
         
         <link rel="stylesheet" href="../css/bootstrap.css">    
         <link rel="stylesheet" href="../css/index.css">
@@ -34,6 +34,7 @@
         <!-- 登陆页面 -->
         <div id="register" class="login">
             <div class="meiggin content clear">
+                <!-- 右边 -->
                 <div class="content_logo left clear">
                     <img src="../img/logo.png" alt="" class="left">
                     <div class="left content_logo_title clear">
@@ -41,14 +42,89 @@
                         <i class="right">【高校联盟】</i>
                     </div>
                 </div>
-                <div class="content_input right login_content">
+                <!-- 左边登陆input -->
+                <div class="content_input right login_content clear" style="display:block">
                     <div class="clear">
-                        <h6 class="left active">密码登陆</h6>
-                        <h6 class="right">验证码登陆</h6>
+                        <h6 class="left active login_title">密码登陆</h6>
+                        <h6 class="right login_title">验证码登陆</h6>
                     </div>
                     
+                    <em class="margin-top-30 line">
+                        <img src="../img/active.jpg" alt="" class=" line_img">
+                    </em>
+
+                    <!-- //密码登陆 -->
+                    <ul class="content_input_list password_input" style="display:block">
+                        <li class="clear content_input_list_li">
+                            <input type="text" class="form-control left" aria-label="..." placeholder='请输入常用手机号/邮箱'>
+                        </li>
+                        <li class="clear content_input_list_li">
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="..." placeholder='请输入密码'>
+                            </div>
+                        </li>
+                        <button class="btn_register">登陆</button>
+                        <div class="forget margin-top-25 clear">
+                            <button class="left forget_l">忘记密码？</button>
+                            <a href="./register.html" class="right forget_r">立即注册</a>
+                        </div>
+                        <em class="line_else">
+                            <span>其他登陆方式</span>
+                        </em>
+                        <div class="else_logo clear">
+                            <a href="#" class="left"><img src="../img/wechat.png" alt=""></a>
+                            <a href="#" class="left else_logo_c"><img src="../img/QQ.png" alt=""></a>
+                            <a href="#" class="left"><img src="../img/blog.png" alt=""></a>
+                        </div>
+                    </ul>
+
+                    <!-- 验证码登陆 -->
+                    <ul class="content_input_list login_content_input_list code_input" style="display:none">
+                        <li class="clear content_input_list_li">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">0086 <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <input type="text" class="form-control" aria-label="..." placeholder='请输入您的手机号码'>
+                            </div>
+                        </li>
+                        <li class="clear content_input_list_li">
+                            <input type="text" class="form-control left" aria-label="..." placeholder='请证明你不是机器人'>
+                            <img src="../img/authCode.png" alt="" class="">
+                        </li>
+                        <li class="clear content_input_list_li">
+                            <input type="text" class="form-control" aria-label="..." placeholder='请输入验证码'>
+                            <button class="getCode">获取验证码</button>
+                        </li>
+                        <button class="btn_register">登陆</button>
+                        <div class="forget margin-top-25 clear">
+                            <button class="left forget_l">忘记密码？</button>
+                            <a href="./register.html" class="right forget_r">立即注册</a>
+                        </div>
+                        <em class="line_else">
+                            <span>其他登陆方式</span>
+                        </em>
+                        <div class="else_logo clear">
+                            <a href="#" class="left"><img src="../img/wechat.png" alt=""></a>
+                            <a href="#" class="left else_logo_c"><img src="../img/QQ.png" alt=""></a>
+                            <a href="#" class="left"><img src="../img/blog.png" alt=""></a>
+                        </div>
+                    </ul>
+
+                    
+                </div>
+                <!-- 密码找回input -->
+                <div class="content_input right password_find" style="display:none;">
+                    <h6>密码找回</h6>
                     <em class="margin-top-30">
-                        <img src="../img/active.jpg" alt="">
+                        <img src="../img/select.png" alt="">
                     </em>
                     <ul class="content_input_list">
                         <li class="clear content_input_list_li">
@@ -79,15 +155,11 @@
                                 <input type="text" class="form-control" aria-label="..." placeholder='设置登陆密码'>
                             </div>
                         </li>
-                        <button class="btn_register">注册</button>
+                        <button class="btn_register a_countersign">确认修改</button>
                     </ul>
                     
                 </div>
             </div>
-        </div>
-        <!-- 登陆页面 -->
-        <div id="login">
-
         </div>
         <!-- 页脚 -->
         <div id="footer">
@@ -141,6 +213,33 @@
         </div>
         <script src="../js/jquery-2.1.4.js"></script>
         <script src="../js/bootstrap.min.js"></script>
-        
+        <script>
+            $(function(){
+                //密码登陆验证码登陆tab切换
+                $('.login_title').on('click',function(){
+                    $(this).addClass('active').siblings('.login_title').removeClass('active')
+                    console.log($('.active').text())
+                    if($('.active').text() == '密码登陆'){
+                        $('.line_active').addClass('line').removeClass('line_active')
+                        $('.password_input').css('display','block').siblings('.content_input_list').css('display','none')
+                    }else if($('.active').text() == '验证码登陆'){
+                        $('.line').addClass('line_active').removeClass('line')
+                        $('.code_input').css('display','block').siblings('.content_input_list').css('display','none')
+                    }
+                   
+                })
+                //忘记密码切换
+                $('.forget_l').on('click',function(){
+                    $('.password_find').show().siblings('.content_input').hide()
+                })
+                //忘记密码跳回
+                $('.a_countersign').on('click',function(){
+                    $('.login_content').show().siblings('.content_input').hide()
+                })
+                if($('a').text()=='忘记密码？'){
+                    $(this).css('cursor','pointer')
+                }
+            })
+        </script>
     </body>
     </html>

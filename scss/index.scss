@@ -1,4 +1,5 @@
 @charset "utf-8";
+//头
 #header{
     height:48px;
     width:100%;
@@ -32,7 +33,8 @@
             }
         }
     }
-}//头
+}
+//页脚
 #footer{
     height:266px;
     width:100%;
@@ -90,8 +92,48 @@
             }
         }
     }
-}//页脚
-
+}
+//公告导航
+.title_nav{
+    padding: 35px 0;
+    .title_nav_l{
+        img{
+            width:47px;
+        }
+        .title_nav_text{
+            span{
+                font-size: 28px;
+                font-weight:300;
+                line-height: 46px;
+            }
+            i{
+                font-size: 18px;
+                line-height: 46px;
+                font-weight:300;
+            }
+        }
+    }
+    .title_nav_r{
+        font-size: 15px;
+        line-height: 50px;
+        
+        li{
+            float: left;
+            margin-right:45px;
+            cursor: pointer;
+            a{
+                font-weight: 600;
+                color: #666666;
+            }
+        }
+        .active{
+            a{
+                color: #f96d00;
+            }
+            
+        }
+    }
+}
 
 // 注册/登陆页面
 #register{
@@ -126,10 +168,15 @@
             -webkit-box-shadow:0 0 15px #e7e7e7;
             box-shadow:0 0 15px #e7e7e7;
             padding: 45px;
+            border-radius: 8px ;
+            -moz-border-radius:8px;  
+            -ms-border-radius:8px;
+            -o-border-radius:8px;
             h6{
                 font-size: 24px;
                 color: #fb6d01;
                 text-align: center;
+                cursor: pointer;
             }
             em{
                 display: block;
@@ -216,7 +263,7 @@
                 width: 50%;
                 color: #333333;
             }
-            em{
+            .line{
                 display: block;
                 height:2px;
                 width:100%;
@@ -224,15 +271,90 @@
                 position: relative;
                 img{
                     position: absolute;
-                    left:-5px;
+                    left:0px;
                     top:-15px;
                 }
             }
             .active{
                 color: #fb6d01;
             }
+            .line_active{
+                display: block;
+                height:2px;
+                width:100%;
+                background: #dadada;
+                position: relative;
+                img{
+                    position: absolute;
+                    right:0px;
+                    top:-15px;
+                }
+            }
+            .content_input_list{
+                .btn_register{
+                    margin-top:120px;
+                }
+                .forget{
+                    margin-left:15px;
+                    width:407px;
+                    font-size: 15px;
+                    font-weight:500;
+                    .forget_l{
+                        color: #fb6d01;
+                        border: none;
+                        background: #fff;
+                        display: block;
+                    }
+                    .forget_r{
+                        color: #999999;
+                    }
+                }
+                .line_else{
+                    display: block;
+                    height:1px;
+                    margin-left:15px;
+                    margin-top:45px;
+                    width:407px;
+                    background: #999999;
+                    color: #999;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        text-align: center;
+                        left:25%;
+                        top:-10px;
+                        width:200px;
+                        background: #fff;
+                        font-size: 16px;
+                    }
+                }
+                .else_logo{
+                    margin-top:40px;
+                    padding: 0 30px;
+                    .else_logo_c{
+                        margin:0 99px;
+                    }
+                }
+                
+            }
+            .login_content_input_list{
+                .btn_register{
+                    margin-top:21px;
+                }
+            }
             
         }
     }
 }
 
+
+//首页
+#home_page{
+    .banner_wrap{
+        height:600px;
+        min-width:1200px;
+        background: url('../img/banner.png') no-repeat top;
+        background-size: cover;
+        position: relative;
+    }
+}

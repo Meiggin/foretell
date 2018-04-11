@@ -63,6 +63,31 @@
       display: block;
       margin: 25px 60px 0 0; }
 
+.title_nav {
+  padding: 35px 0; }
+  .title_nav .title_nav_l img {
+    width: 47px; }
+  .title_nav .title_nav_l .title_nav_text span {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 46px; }
+  .title_nav .title_nav_l .title_nav_text i {
+    font-size: 18px;
+    line-height: 46px;
+    font-weight: 300; }
+  .title_nav .title_nav_r {
+    font-size: 15px;
+    line-height: 50px; }
+    .title_nav .title_nav_r li {
+      float: left;
+      margin-right: 45px;
+      cursor: pointer; }
+      .title_nav .title_nav_r li a {
+        font-weight: 600;
+        color: #666666; }
+    .title_nav .title_nav_r .active a {
+      color: #f96d00; }
+
 #register .content {
   padding: 100px 0 150px 0; }
   #register .content .content_logo {
@@ -87,11 +112,16 @@
     -moz-box-shadow: 0 0 15px #e7e7e7;
     -webkit-box-shadow: 0 0 15px #e7e7e7;
     box-shadow: 0 0 15px #e7e7e7;
-    padding: 45px; }
+    padding: 45px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px; }
     #register .content .content_input h6 {
       font-size: 24px;
       color: #fb6d01;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
     #register .content .content_input em {
       display: block;
       height: 2px;
@@ -162,17 +192,72 @@
   #register .content .login_content h6 {
     width: 50%;
     color: #333333; }
-  #register .content .login_content em {
+  #register .content .login_content .line {
     display: block;
     height: 2px;
     width: 100%;
     background: #dadada;
     position: relative; }
-    #register .content .login_content em img {
+    #register .content .login_content .line img {
       position: absolute;
-      left: -5px;
+      left: 0px;
       top: -15px; }
   #register .content .login_content .active {
     color: #fb6d01; }
+  #register .content .login_content .line_active {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #dadada;
+    position: relative; }
+    #register .content .login_content .line_active img {
+      position: absolute;
+      right: 0px;
+      top: -15px; }
+  #register .content .login_content .content_input_list .btn_register {
+    margin-top: 120px; }
+  #register .content .login_content .content_input_list .forget {
+    margin-left: 15px;
+    width: 407px;
+    font-size: 15px;
+    font-weight: 500; }
+    #register .content .login_content .content_input_list .forget .forget_l {
+      color: #fb6d01;
+      border: none;
+      background: #fff;
+      display: block; }
+    #register .content .login_content .content_input_list .forget .forget_r {
+      color: #999999; }
+  #register .content .login_content .content_input_list .line_else {
+    display: block;
+    height: 1px;
+    margin-left: 15px;
+    margin-top: 45px;
+    width: 407px;
+    background: #999999;
+    color: #999;
+    position: relative; }
+    #register .content .login_content .content_input_list .line_else span {
+      position: absolute;
+      text-align: center;
+      left: 25%;
+      top: -10px;
+      width: 200px;
+      background: #fff;
+      font-size: 16px; }
+  #register .content .login_content .content_input_list .else_logo {
+    margin-top: 40px;
+    padding: 0 30px; }
+    #register .content .login_content .content_input_list .else_logo .else_logo_c {
+      margin: 0 99px; }
+  #register .content .login_content .login_content_input_list .btn_register {
+    margin-top: 21px; }
+
+#home_page .banner_wrap {
+  height: 600px;
+  min-width: 1200px;
+  background: url("../img/banner.png") no-repeat top;
+  background-size: cover;
+  position: relative; }
 
 /*# sourceMappingURL=index.css.map */
