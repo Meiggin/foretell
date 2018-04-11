@@ -100,7 +100,7 @@
       position: relative; }
       #register .content .content_input em img {
         position: absolute;
-        left: 47%;
+        left: 47.5%;
         top: -15px; }
     #register .content .content_input .content_input_list {
       margin-top: 25px; }
@@ -160,6 +160,19 @@
         -ms-border-radius: 4px;
         -o-border-radius: 4px; }
   #register .content .login_content h6 {
-    width: 50%; }
+    width: 50%;
+    color: #333333; }
+  #register .content .login_content em {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #dadada;
+    position: relative; }
+    #register .content .login_content em img {
+      position: absolute;
+      left: -5px;
+      top: -15px; }
+  #register .content .login_content .active {
+    color: #fb6d01; }
 
 /*# sourceMappingURL=index.css.map */

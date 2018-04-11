@@ -139,7 +139,7 @@
                 position: relative;
                 img{
                     position: absolute;
-                    left: 47%;
+                    left: 47.5%;
                     top:-15px;
                 }
             }
@@ -214,6 +214,22 @@
         .login_content{
             h6{
                 width: 50%;
+                color: #333333;
+            }
+            em{
+                display: block;
+                height:2px;
+                width:100%;
+                background: #dadada;
+                position: relative;
+                img{
+                    position: absolute;
+                    left:-5px;
+                    top:-15px;
+                }
+            }
+            .active{
+                color: #fb6d01;
             }
             
         }
