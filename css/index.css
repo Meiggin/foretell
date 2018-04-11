@@ -159,5 +159,7 @@
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px; }
+  #register .content .login_content h6 {
+    width: 50%; }
 
 /*# sourceMappingURL=index.css.map */

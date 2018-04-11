@@ -1,3 +1,4 @@
+@charset "utf-8";
 #header{
     height:48px;
     width:100%;
@@ -91,7 +92,8 @@
     }
 }//页脚
 
-// 注册页面
+
+// 注册/登陆页面
 #register{
     .content{
         padding: 100px 0 150px 0 ;
@@ -116,6 +118,7 @@
                 }
             }
         }
+        //注册页面输入框
         .content_input{
             width: 437px;
             height:622px;
@@ -207,5 +210,13 @@
             }
             
         }
+        // 登陆页面输入框
+        .login_content{
+            h6{
+                width: 50%;
+            }
+            
+        }
     }
 }
+
