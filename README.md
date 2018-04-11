@@ -1,5 +1,13 @@
 
 fine
-***html+scss+jq /_ \
+# html+scss+jq /_ \
 
-4.10 -- register => finish
+## 4.20
+* register 
+* login 
+* index 
+* intro 
+* recruit message
+* recruit message details
+* personal center
+* template
