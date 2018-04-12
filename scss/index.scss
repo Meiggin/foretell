@@ -436,8 +436,165 @@
                 border-right: 1px solid #dadada;
                 border-left:1px solid #dadada;
                 border-bottom: 1px solid #fff;
+                color: #333333;
             }
             
+        }
+        .skill_tabs_guide{
+            margin-top:45px;
+            li{
+                float: left;
+                margin-right: 29px;
+                img{
+                    width:278px;
+                    height:278px;
+                    display: block;
+                }
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .view_more{
+        margin-top: 70px; 
+        height: 600px;
+        min-width: 1200px;
+        background: url('../img/view_more.png') no-repeat top;
+        
+        .view_more_pos{
+            position: relative;
+            height: 600px;
+            button{
+                border: none;
+                background: #ffbc65;
+                width: 285px;
+                line-height: 48px;
+                font-size: 22px;
+                color: #fff;
+                display: block;
+                border-radius:48px;
+                -moz-border-radius:48px; /* Old Firefox */
+                position: absolute;
+                right: 220px;
+                bottom: 70px;
+                box-shadow: 0px 7px 15px #c7c5c1;
+            }
+        }
+        
+    }
+    .advantage{
+        padding-top: 70px;
+        color: #333333;
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        .advantage_subhead{
+            margin-top: 25px;
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+        }
+        ul{
+            margin-top: 10px;
+            li{
+                margin-top: 30px;
+                margin-right: 30px;
+                float: left;
+                position: relative;
+                img{
+                    width: 380px;
+                    height: 275px;
+                }
+                span{
+                    position: absolute;
+                    left: 70px;
+                    top: 110px;
+                    width: 240px;
+                    line-height: 48px;
+                    background: #000;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 18px;
+                    opacity: .5;
+                }
+            }
+            li:nth-child(3n+3){
+                margin-right: 0;
+            }
+        }
+    }
+    .pocket{
+        margin-top: 60px;
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        .pocket_subhead{
+            margin-top: 25px;
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+        }
+        .pocket_content{
+            margin-top: 35px;
+            .pocket_content_l{
+                width: 545px;
+                height: 370px;
+            }
+        }
+        .pocket_content_r{
+            position: relative;
+            ul{
+                margin-left: 105px;
+                li{
+                    margin-top: 35px;
+                   .pocket_content_r_img{
+                       margin-left: 7px;
+                   }
+                    .pocket_content_r_img1{
+                        width: 58px;
+                        height: 45px;
+                        margin-right: 20px;
+                        
+                    }
+                    .pocket_content_r_img2{
+                        width: 42px;
+                        height: 50px;
+                        margin-right: 20px;
+                    }
+                    .pocket_content_r_img3{
+                        width: 45px;
+                        height: 50px;
+                        margin-right: 20px;
+                    }
+                    h5{
+                        font-size: 20px;
+                        color: #333333;
+                    }
+                    p{
+                        color: #666;
+                        font-size: 18px;
+                    }
+                }
+            }
+            button{
+                
+                border: none;
+                background: #ffbc65;
+                width: 285px;
+                line-height: 48px;
+                font-size: 22px;
+                color: #fff;
+                display: block;
+                border-radius: 48px;
+                -moz-border-radius: 48px;
+                position: absolute;
+                right: 35px;
+                bottom: -100px;
+                box-shadow: 0px 7px 15px #c7c5c1;
+            }
         }
     }
 }
