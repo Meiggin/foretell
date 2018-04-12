@@ -10,9 +10,10 @@ fine
     > finish
 
 * index 
-    > in progress
+    > finish
 
-* teacher
+* elite
+    > in progress 
 
 * intro 
 

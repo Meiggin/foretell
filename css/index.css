@@ -88,6 +88,11 @@
     .title_nav .title_nav_r .active a {
       color: #f96d00; }
 
+.title_line {
+  width: 100%;
+  height: 2px;
+  background: #393e46; }
+
 #register .content {
   padding: 100px 0 150px 0; }
   #register .content .content_logo {
@@ -381,17 +386,26 @@
       #home_page .advantage ul li img {
         width: 380px;
         height: 275px; }
+      #home_page .advantage ul li .opc_wrap {
+        position: absolute;
+        left: 70px;
+        top: 110px;
+        height: 48px;
+        width: 240px;
+        opacity: .5;
+        background: #000; }
       #home_page .advantage ul li span {
         position: absolute;
         left: 70px;
         top: 110px;
         width: 240px;
         line-height: 48px;
-        background: #000;
         color: #fff;
         text-align: center;
         font-size: 18px;
-        opacity: .5; }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
     #home_page .advantage ul li:nth-child(3n+3) {
       margin-right: 0; }
 #home_page .pocket {
@@ -449,5 +463,22 @@
       right: 35px;
       bottom: -100px;
       box-shadow: 0px 7px 15px #c7c5c1; }
+
+#elite_page .elite_search .elite_search_title {
+  font-size: 18px;
+  line-height: 75px;
+  color: #333333; }
+#elite_page .elite_search .elite_search_input ul li {
+  float: left;
+  margin-right: 10px; }
+  #elite_page .elite_search .elite_search_input ul li .form-control {
+    width: 168px; }
+#elite_page .elite_search .elite_search_input ul button {
+  width: 80px;
+  height: 34px;
+  border: none;
+  background: #5c636e;
+  color: #fff;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=index.css.map */
