@@ -13,9 +13,10 @@ fine
     > finish
 
 * elite
-    > in progress 
+    > finish
 
 * intro 
+    > in progress 
 
 * recruit message
 

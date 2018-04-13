@@ -480,5 +480,53 @@
   background: #5c636e;
   color: #fff;
   border-radius: 3px; }
+#elite_page .elite_nav {
+  margin-top: 30px; }
+  #elite_page .elite_nav ul {
+    line-height: 60px;
+    font-size: 18px;
+    color: #999;
+    background: #f2f2f2; }
+    #elite_page .elite_nav ul li {
+      cursor: pointer;
+      padding: 0 60px;
+      float: left; }
+    #elite_page .elite_nav ul .active {
+      background: #f96d00;
+      color: #fff; }
+#elite_page .elite_list {
+  margin-top: 20px; }
+  #elite_page .elite_list ul li {
+    width: 278px;
+    border: 1px solid #dadada;
+    height: 393px;
+    overflow: hidden;
+    background-size: 100%;
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    margin-top: 20px; }
+    #elite_page .elite_list ul li .elite_list_person {
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 0 5px; }
+    #elite_page .elite_list ul li .elite_list_shade {
+      position: absolute;
+      bottom: 0; }
+    #elite_page .elite_list ul li .elite_list_synopsis {
+      position: absolute;
+      bottom: -10px;
+      left: 58px;
+      color: #fff;
+      width: 170px;
+      height: 107px;
+      font-size: 14px;
+      line-height: 28px; }
+#elite_page #PageNavId {
+  padding: 50px 0; }
+  #elite_page #PageNavId ul li a {
+    margin: 0 5px; }
+  #elite_page #PageNavId .page-input-box {
+    display: none; }
 
 /*# sourceMappingURL=index.css.map */
