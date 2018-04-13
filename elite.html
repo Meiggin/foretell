@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <title>先知首页</title>
-    <link rel="stylesheet" href="./css/pageNav.css">
     <link rel="stylesheet" href="./css/bootstrap.css">    
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/public.css">
@@ -304,7 +303,7 @@
             </ul>
         </div>
         <!-- 页码 -->
-        <nav aria-label="Page navigation" class="page-nav-outer" id="PageNavId"></nav>
+        <div id="page" class="page_div"></div>
               
     </div>
     <!-- 页脚 -->
@@ -359,7 +358,7 @@
     </div>
     <script src="./js/jquery-2.1.4.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/pageNav.js"></script>
+    <script src="./js/paging.js"></script>
     <script>
         $(function(){
             $('.skill_tabs_tag li').on('click',function(){
@@ -371,26 +370,14 @@
             $('.elite_list ul li:nth-child(4n)').css('margin-right','0')
 
             //判断分页------------------------------
-            var pageNavObj = null; //用于储存分页对象
-            pageNavObj = new PageNavCreate("PageNavId", {
-                pageCount: 30,
-                currentPage: 1,
-                perPageNum: 5,
-            });
-            // pageNavObj.afterClick(pageNavCallBack);
-
-            // 翻页按钮点击后触发的回调函数       
-            function pagenavcallback(clickpage) {
-                // clickpage是被点击的目标页码          
-                // 一般来说可以在这里通过clickpage,执行ajax请求取数来重写页面          
-                // 根据新的数据重新生成            
-                pagenavobj = new pagenavcreate("pagenavid", {
-                    page: 30, //总页数               
-                    currentpage: clickpage, //当前页              
-                    perpagenum: 5, //每页按钮数         
-                });
-                pagenavobj.afterclick(pagenavcallback); ///最后还要再次绑定点击事件后的回调函数  
-            }
+            $("#page").paging({
+                pageNo:5,
+                totalPage: 9,
+                totalSize: 300,
+                callback: function(num) {
+                    // alert(num)
+                }
+            })
         })
         
         
