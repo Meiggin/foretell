@@ -546,7 +546,8 @@
     line-height: 28px;
     color: #666666;
     font-size: 13px;
-    display: inline-block; }
+    display: inline-block;
+    background: #dadada; }
   #elite_page #firstPage,
   #elite_page #lastPage {
     width: 50px;
@@ -554,12 +555,12 @@
     border: 1px solid #0073A9 !important; }
   #elite_page #prePage,
   #elite_page #nextPage {
-    width: 70px;
-    color: #0073A9;
-    border: 1px solid #0073A9 !important; }
+    width: 30px;
+    color: #a3a3a3;
+    border: 1px solid #dadada !important;
+    background: #f2f2f2; }
   #elite_page .page_div .current {
-    background-color: #0073A9;
-    border-color: #0073A9;
+    background-color: #5c636e;
     color: #FFFFFF; }
   #elite_page .totalPages {
     margin: 0 10px; }

@@ -725,6 +725,7 @@
         color: #666666;
         font-size: 13px;
         display: inline-block;
+        background: #dadada;
     }
     
     #firstPage,
@@ -736,14 +737,14 @@
     
     #prePage,
     #nextPage {
-        width: 70px;
-        color: #0073A9;
-        border: 1px solid #0073A9!important;
+        width: 30px;
+        color: #a3a3a3;
+        border: 1px solid #dadada!important;
+        background: #f2f2f2;
     }
     
     .page_div .current {
-        background-color: #0073A9;
-        border-color: #0073A9;
+        background-color: #5c636e;
         color: #FFFFFF;
     }
     
