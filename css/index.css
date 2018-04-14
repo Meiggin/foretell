@@ -643,6 +643,10 @@
           color: #fff;
           background: #f96d00;
           border-radius: 2px;
-          border: none; }
+          border: none;
+          font-size: 18px; }
+        #intro_page .intro_page_banner .intro_teacher .intro_teacher_card .intro_teacher_card_form .intro_teacher_card_form_allowed .intro_teacher_card_form_allowed_l span {
+          font-size: 16px;
+          color: #999999; }
 
 /*# sourceMappingURL=index.css.map */
