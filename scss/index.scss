@@ -140,6 +140,22 @@
     height: 2px;
     background: #393e46;
 }
+// 公共标题
+.title_border{
+    border-bottom: 2px solid #dadada;
+    position: relative;
+    p{
+        font-size: 22px;
+        line-height: 62px;
+        color: #333;
+    }
+    img{
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+
+}
 // 注册/登陆页面
 #register{
     .content{
@@ -779,6 +795,7 @@
                 height: 520px;
                 background: #fff url('../img/vigour.png') no-repeat left;
                 background-size: 100%;
+                box-shadow: 0 0 15px #ddd;
                 .intro_teacher_card_person{
                     position: absolute;
                     top: -84px;
@@ -810,6 +827,10 @@
                             line-height: 38px;
                             margin-right: 10px;
                             
+                        }
+                        .active{
+                            color: #f96c00;
+                            border: 1px solid #f96c00;
                         }
                     }
                     .intro_teacher_card_form_select{
@@ -859,12 +880,131 @@
                                 color: #999999;
                             }
                         }
+                        .intro_teacher_card_form_allowed_r{
+                            cursor: pointer;
+                            margin-right: 35px;
+                            img{
+                                width: 28px;
+                                margin-top: 12px;
+                                margin-right: 12px;
+                            }
+                            span{
+                                line-height: 50px;
+                                font-size: 14px;
+                                color: #666;
+                            }
+                        }
                     }
                 }
             }
         }
         
     }
-   
+    .intro_content{
+        margin-top: 210px;
+        .intro_services_content{
+            padding: 30px 35px;
+            color: #666;
+            font-size: 16px;
+            .intro_services_content_list{
+                margin-top: 10px;
+                p{
+                    margin-right: 18px;
+                }
+                ol{
+                    li{
+                        width: 570px;
+                        margin-bottom: 20px;
+                        p{
+                            float: left;
+                        }
+                        span{
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .intro_services_content_evaluate{
+                position: relative;
+                .intro_services_content_evaluate_tab_wrap{
+                    .intro_services_content_evaluate_tab{
+                        span{
+                            margin-right: 60px;
+                            cursor: pointer;
+                            font-size: 14px;
+                        }
+                        .intro_services_content_evaluate_tab_all{
+                            color: #fa6c00;
+                        }
+                        .intro_services_content_evaluate_tab_good{
+                            color: #fa6c00;
+                        }
+                        .intro_services_content_evaluate_tab_bad{
+                            color: #666;
+                        }
+                    }
+                    .intro_services_content_evaluate_tabList{
+                        margin-top: 30px;
+                        width: 730px;
+                        li{
+                            height: 80px;
+                            border-bottom: 1px dashed #dcdcdc;
+                            .intro_services_content_evaluate_tabList_l{
+                                margin-top: 18px;
+                                img{
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    margin-right: 20px;
+                                }
+                                .intro_services_content_evaluate_tabList_con{
+                                    margin-top: -5px;
+                                    p{
+                                        color: #333;
+                                        margin-bottom: 10px;
+                                    }
+                                    span{
+                                        color: #999;
+
+                                    }
+                                }
+                            }
+                            .intro_services_content_evaluate_tabList_r{
+                                color: #fa6d03;
+                                line-height: 80px;
+                            }
+                        }
+                    }
+                }
+                .intro_services_content_evaluate_start{
+                    position: absolute;
+                    right: 50px;
+                    top: 30px;
+                    font-size: 14px;
+                    .star_num{
+                        text-align: center;
+                        color: #fa6c00;
+                    }
+                    .population{
+                        color: #666666;
+                        span{
+                            color: #fa6c00;
+                        }
+                    }
+                    ul{
+                        margin: 5px 0;
+                        li{
+                            float: left;
+                            margin-right: 10px;
+                            img{
+                                width: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
     
 }

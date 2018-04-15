@@ -3,7 +3,7 @@ body{font:12px  "微软雅黑"; word-wrap:break-word;}
 a,u,s,del{color:#666;text-decoration:none;} 
 fieldset ,a img,.bor0 {border:0;}
 i,em,b{font-style:normal;font-weight:400;}
-li{list-style:none;}
+ul li{list-style:none;}
 input,textarea{outline:none;}
 textarea{resize:none;}
 a:hover{text-decoration:none;}
@@ -42,6 +42,9 @@ button:focus{
 .margin-top-30{
     margin-top:30px;
 }
+.margin-top-45{
+    margin-top: 45px;
+}
 .margin-top-55{
     margin-top: 55px;
 }
@@ -50,6 +53,9 @@ button:focus{
 }
 .margin-bottom-10{
     margin-bottom:10px;
+}
+.margin-bottom-15{
+    margin-bottom:15px;
 }
 .margin-bottom-20{
     margin-bottom:20px;

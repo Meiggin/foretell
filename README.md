@@ -16,10 +16,11 @@ fine
     > finish
 
 * intro 
-    > in progress 
+    > finish
 
 * recruit message
-
+    > in progress 
+    
 * recruit message details
 
 * personal center
