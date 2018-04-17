@@ -19,10 +19,10 @@ fine
     > finish
 
 * recruit message
-    > in progress 
+    > finish
     
 * recruit message details
-
+    > in progress  
 * personal center
 
 * template
