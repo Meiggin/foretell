@@ -34,6 +34,66 @@
         }
     }
 }
+//页码
+
+    /*
+     * 页数按钮样式
+     */
+    .page_div {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: 15px;
+        font-family: "microsoft yahei";
+        color: #666666;
+        margin-right: 10px;
+    
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .page_div a {
+        min-width: 30px;
+        height: 28px;
+        border: 1px solid #dce0e0!important;
+        text-align: center;
+        margin: 0 4px;
+        cursor: pointer;
+        line-height: 28px;
+        color: #666666;
+        font-size: 13px;
+        display: inline-block;
+        background: #dadada;
+    }
+    
+    #firstPage,
+    #lastPage {
+        width: 50px;
+        color: #0073A9;
+        border: 1px solid #0073A9!important;
+    }
+    
+    #prePage,
+    #nextPage {
+        width: 30px;
+        color: #a3a3a3;
+        border: 1px solid #dadada!important;
+        background: #f2f2f2;
+    }
+    
+    .page_div .current {
+        background-color: #5c636e;
+        color: #FFFFFF;
+    }
+    
+    .totalPages {
+        margin: 0 10px;
+    }
+    
+    .totalPages span,
+    .totalSize span {
+        color: #0073A9;
+        margin: 0 5px;
+    }
+
 //页脚
 #footer{
     height:266px;
@@ -720,64 +780,7 @@
             }
         }
     }
-    .page_div {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 15px;
-        font-family: "microsoft yahei";
-        color: #666666;
-        margin-right: 10px;
 
-        box-sizing: border-box;
-        text-align: center;
-    }
-    /*
-     * 页数按钮样式
-     */
-    
-    .page_div a {
-        min-width: 30px;
-        height: 28px;
-        border: 1px solid #dce0e0!important;
-        text-align: center;
-        margin: 0 4px;
-        cursor: pointer;
-        line-height: 28px;
-        color: #666666;
-        font-size: 13px;
-        display: inline-block;
-        background: #dadada;
-    }
-    
-    #firstPage,
-    #lastPage {
-        width: 50px;
-        color: #0073A9;
-        border: 1px solid #0073A9!important;
-    }
-    
-    #prePage,
-    #nextPage {
-        width: 30px;
-        color: #a3a3a3;
-        border: 1px solid #dadada!important;
-        background: #f2f2f2;
-    }
-    
-    .page_div .current {
-        background-color: #5c636e;
-        color: #FFFFFF;
-    }
-    
-    .totalPages {
-        margin: 0 10px;
-    }
-    
-    .totalPages span,
-    .totalSize span {
-        color: #0073A9;
-        margin: 0 5px;
-    }
 }
 
 //精英详情
@@ -1143,6 +1146,110 @@
                         margin-top: 30px;
                         color: #333;
                         font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//招生详情
+#recruit_detail{
+    .recruit_detail_head{
+        .recruit_detail_head_title{
+            h4{
+                font-size: 14px;
+                line-height: 50px;
+                color: #666;
+            }
+            .recruit_detail_head_title_search{
+                padding-bottom: 30px;
+                border-bottom: 1px solid #dadada;
+                .recruit_detail_head_title_search_l{
+                    font-size: 28px;
+                    color: #666666;
+                    line-height: 54px;
+                }
+                .recruit_detail_head_title_search_r{
+                    margin-left: 50px;
+                    .form-control{
+                        height: 54px;
+                        width: 360px;
+                    }
+                    .input-group-btn{
+                        button{
+                            height: 54px;
+                            padding: 0 12px;
+                            width: 54px;
+                            background: url('../img/search.png') no-repeat center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recruit_rank{
+        padding: 30px 0;
+        border-bottom: 1px dashed #dadada;
+        .recruit_rank_title{
+            font-size: 14px;
+            color: #333333;
+            line-height: 32px;
+        }
+        ul{
+            font-size: 12px;
+            color: #666666;
+            line-height: 32px;
+            width: 1010px;
+            li{
+                width: 62px;
+                text-align: center;
+                float: left;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+            .active{
+                background: #393e46;
+                color: #fff;
+                border-radius: 3px;
+            }
+        }
+
+    }
+    .recruit_chapter{
+        border-bottom: 1px solid #dadada;
+        margin-bottom: 25px;
+        li{
+            border: 1px solid #dadada;
+            border-radius: 3px;
+        }
+    }
+    .recruit_list{
+        margin-bottom: 45px;
+        ul{
+            li{
+                border-bottom: 1px solid #dadada;
+                line-height: 68px;
+                i{
+                    height: 16px;
+                    width: 2px;
+                    background: #c6c6c6;
+                    display: block;
+                    font-size: 14px;
+                    margin: 25px 10px 0px 10px;
+                }
+                .recruit_list_l{
+                    color: #333;
+
+                }
+                .recruit_list_r{
+                    color: #666;
+                    .recruit_list_img{
+                        margin-top: 23px;
+                        margin-right: 5px;
+                    }
+                    .recruit_list_span{
+                        color: #f96d00;
                     }
                 }
             }

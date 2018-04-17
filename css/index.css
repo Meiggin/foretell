@@ -23,6 +23,57 @@
     #header .content .loginAndRegister img {
       margin-top: 16px; }
 
+/*
+ * 页数按钮样式
+ */
+.page_div {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 15px;
+  font-family: "microsoft yahei";
+  color: #666666;
+  margin-right: 10px;
+  box-sizing: border-box;
+  text-align: center; }
+
+.page_div a {
+  min-width: 30px;
+  height: 28px;
+  border: 1px solid #dce0e0 !important;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  line-height: 28px;
+  color: #666666;
+  font-size: 13px;
+  display: inline-block;
+  background: #dadada; }
+
+#firstPage,
+#lastPage {
+  width: 50px;
+  color: #0073A9;
+  border: 1px solid #0073A9 !important; }
+
+#prePage,
+#nextPage {
+  width: 30px;
+  color: #a3a3a3;
+  border: 1px solid #dadada !important;
+  background: #f2f2f2; }
+
+.page_div .current {
+  background-color: #5c636e;
+  color: #FFFFFF; }
+
+.totalPages {
+  margin: 0 10px; }
+
+.totalPages span,
+.totalSize span {
+  color: #0073A9;
+  margin: 0 5px; }
+
 #footer {
   height: 266px;
   width: 100%;
@@ -481,109 +532,64 @@
       bottom: -100px;
       box-shadow: 0px 7px 15px #c7c5c1; }
 
-#elite_page {
-  /*
-   * 页数按钮样式
-   */ }
-  #elite_page .elite_search .elite_search_title {
+#elite_page .elite_search .elite_search_title {
+  font-size: 18px;
+  line-height: 75px;
+  color: #333333; }
+#elite_page .elite_search .elite_search_input ul li {
+  float: left;
+  margin-right: 10px; }
+  #elite_page .elite_search .elite_search_input ul li .form-control {
+    width: 168px; }
+#elite_page .elite_search .elite_search_input ul button {
+  width: 80px;
+  height: 34px;
+  border: none;
+  background: #5c636e;
+  color: #fff;
+  border-radius: 3px; }
+#elite_page .elite_nav {
+  margin-top: 30px; }
+  #elite_page .elite_nav ul {
+    line-height: 60px;
     font-size: 18px;
-    line-height: 75px;
-    color: #333333; }
-  #elite_page .elite_search .elite_search_input ul li {
-    float: left;
-    margin-right: 10px; }
-    #elite_page .elite_search .elite_search_input ul li .form-control {
-      width: 168px; }
-  #elite_page .elite_search .elite_search_input ul button {
-    width: 80px;
-    height: 34px;
-    border: none;
-    background: #5c636e;
-    color: #fff;
-    border-radius: 3px; }
-  #elite_page .elite_nav {
-    margin-top: 30px; }
-    #elite_page .elite_nav ul {
-      line-height: 60px;
-      font-size: 18px;
-      color: #999;
-      background: #f2f2f2; }
-      #elite_page .elite_nav ul li {
-        cursor: pointer;
-        padding: 0 60px;
-        float: left; }
-      #elite_page .elite_nav ul .active {
-        background: #f96d00;
-        color: #fff; }
-  #elite_page .elite_list {
-    margin-top: 20px; }
-    #elite_page .elite_list ul li {
-      width: 278px;
-      border: 1px solid #dadada;
-      height: 393px;
-      overflow: hidden;
-      background-size: 100%;
-      position: relative;
-      float: left;
-      margin-right: 25px;
-      margin-top: 20px; }
-      #elite_page .elite_list ul li .elite_list_person {
-        display: block;
-        margin: 0 auto;
-        box-shadow: 0 0 5px; }
-      #elite_page .elite_list ul li .elite_list_shade {
-        position: absolute;
-        bottom: 0; }
-      #elite_page .elite_list ul li .elite_list_synopsis {
-        position: absolute;
-        bottom: -10px;
-        left: 58px;
-        color: #fff;
-        width: 170px;
-        height: 107px;
-        font-size: 14px;
-        line-height: 28px; }
-  #elite_page .page_div {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-family: "microsoft yahei";
-    color: #666666;
-    margin-right: 10px;
-    box-sizing: border-box;
-    text-align: center; }
-  #elite_page .page_div a {
-    min-width: 30px;
-    height: 28px;
-    border: 1px solid #dce0e0 !important;
-    text-align: center;
-    margin: 0 4px;
-    cursor: pointer;
-    line-height: 28px;
-    color: #666666;
-    font-size: 13px;
-    display: inline-block;
-    background: #dadada; }
-  #elite_page #firstPage,
-  #elite_page #lastPage {
-    width: 50px;
-    color: #0073A9;
-    border: 1px solid #0073A9 !important; }
-  #elite_page #prePage,
-  #elite_page #nextPage {
-    width: 30px;
-    color: #a3a3a3;
-    border: 1px solid #dadada !important;
+    color: #999;
     background: #f2f2f2; }
-  #elite_page .page_div .current {
-    background-color: #5c636e;
-    color: #FFFFFF; }
-  #elite_page .totalPages {
-    margin: 0 10px; }
-  #elite_page .totalPages span,
-  #elite_page .totalSize span {
-    color: #0073A9;
-    margin: 0 5px; }
+    #elite_page .elite_nav ul li {
+      cursor: pointer;
+      padding: 0 60px;
+      float: left; }
+    #elite_page .elite_nav ul .active {
+      background: #f96d00;
+      color: #fff; }
+#elite_page .elite_list {
+  margin-top: 20px; }
+  #elite_page .elite_list ul li {
+    width: 278px;
+    border: 1px solid #dadada;
+    height: 393px;
+    overflow: hidden;
+    background-size: 100%;
+    position: relative;
+    float: left;
+    margin-right: 25px;
+    margin-top: 20px; }
+    #elite_page .elite_list ul li .elite_list_person {
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 0 5px; }
+    #elite_page .elite_list ul li .elite_list_shade {
+      position: absolute;
+      bottom: 0; }
+    #elite_page .elite_list ul li .elite_list_synopsis {
+      position: absolute;
+      bottom: -10px;
+      left: 58px;
+      color: #fff;
+      width: 170px;
+      height: 107px;
+      font-size: 14px;
+      line-height: 28px; }
 
 #intro_page .intro_page_banner {
   background: url("../img/banner2.png") no-repeat 100%;
@@ -846,5 +852,76 @@
       margin-top: 30px;
       color: #333;
       font-size: 14px; }
+
+#recruit_detail .recruit_detail_head .recruit_detail_head_title h4 {
+  font-size: 14px;
+  line-height: 50px;
+  color: #666; }
+#recruit_detail .recruit_detail_head .recruit_detail_head_title .recruit_detail_head_title_search {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dadada; }
+  #recruit_detail .recruit_detail_head .recruit_detail_head_title .recruit_detail_head_title_search .recruit_detail_head_title_search_l {
+    font-size: 28px;
+    color: #666666;
+    line-height: 54px; }
+  #recruit_detail .recruit_detail_head .recruit_detail_head_title .recruit_detail_head_title_search .recruit_detail_head_title_search_r {
+    margin-left: 50px; }
+    #recruit_detail .recruit_detail_head .recruit_detail_head_title .recruit_detail_head_title_search .recruit_detail_head_title_search_r .form-control {
+      height: 54px;
+      width: 360px; }
+    #recruit_detail .recruit_detail_head .recruit_detail_head_title .recruit_detail_head_title_search .recruit_detail_head_title_search_r .input-group-btn button {
+      height: 54px;
+      padding: 0 12px;
+      width: 54px;
+      background: url("../img/search.png") no-repeat center; }
+#recruit_detail .recruit_rank {
+  padding: 30px 0;
+  border-bottom: 1px dashed #dadada; }
+  #recruit_detail .recruit_rank .recruit_rank_title {
+    font-size: 14px;
+    color: #333333;
+    line-height: 32px; }
+  #recruit_detail .recruit_rank ul {
+    font-size: 12px;
+    color: #666666;
+    line-height: 32px;
+    width: 1010px; }
+    #recruit_detail .recruit_rank ul li {
+      width: 62px;
+      text-align: center;
+      float: left;
+      margin-right: 10px;
+      cursor: pointer; }
+    #recruit_detail .recruit_rank ul .active {
+      background: #393e46;
+      color: #fff;
+      border-radius: 3px; }
+#recruit_detail .recruit_chapter {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 25px; }
+  #recruit_detail .recruit_chapter li {
+    border: 1px solid #dadada;
+    border-radius: 3px; }
+#recruit_detail .recruit_list {
+  margin-bottom: 45px; }
+  #recruit_detail .recruit_list ul li {
+    border-bottom: 1px solid #dadada;
+    line-height: 68px; }
+    #recruit_detail .recruit_list ul li i {
+      height: 16px;
+      width: 2px;
+      background: #c6c6c6;
+      display: block;
+      font-size: 14px;
+      margin: 25px 10px 0px 10px; }
+    #recruit_detail .recruit_list ul li .recruit_list_l {
+      color: #333; }
+    #recruit_detail .recruit_list ul li .recruit_list_r {
+      color: #666; }
+      #recruit_detail .recruit_list ul li .recruit_list_r .recruit_list_img {
+        margin-top: 23px;
+        margin-right: 5px; }
+      #recruit_detail .recruit_list ul li .recruit_list_r .recruit_list_span {
+        color: #f96d00; }
 
 /*# sourceMappingURL=index.css.map */

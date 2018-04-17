@@ -22,8 +22,8 @@ fine
     > finish
     
 * recruit message details
-    > in progress  
-    
-* personal center
+    > finish
 
+* personal center
+    > in progress 
 * template
