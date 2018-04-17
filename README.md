@@ -23,6 +23,7 @@ fine
     
 * recruit message details
     > in progress  
+    
 * personal center
 
 * template
