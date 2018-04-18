@@ -24,8 +24,8 @@
       margin-top: 16px; }
 
 /*
- * 页数按钮样式
- */
+    * 页数按钮样式
+    */
 .page_div {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -923,5 +923,374 @@
         margin-right: 5px; }
       #recruit_detail .recruit_list ul li .recruit_list_r .recruit_list_span {
         color: #f96d00; }
+
+#indiv_center .users_nav {
+  width: 240px; }
+  #indiv_center .users_nav .user_nav_title {
+    line-height: 100px; }
+    #indiv_center .users_nav .user_nav_title span {
+      font-size: 20px;
+      color: #666;
+      cursor: pointer; }
+    #indiv_center .users_nav .user_nav_title .user_nav_title_i {
+      height: 20px;
+      background: #dadada;
+      width: 2px;
+      margin: 40px 0 0 39px; }
+    #indiv_center .users_nav .user_nav_title .active {
+      color: #f96d00; }
+  #indiv_center .users_nav .user_nav_con ul {
+    width: 240px;
+    box-shadow: 0 0 13px #f8f8f8;
+    border-top: 1px solid #dadada; }
+    #indiv_center .users_nav .user_nav_con ul li {
+      padding: 0 55px;
+      line-height: 65px;
+      border-bottom: 1px solid #dadada;
+      cursor: pointer; }
+      #indiv_center .users_nav .user_nav_con ul li span {
+        float: right;
+        font-size: 18px; }
+      #indiv_center .users_nav .user_nav_con ul li .user_nav_con_img {
+        float: left;
+        width: 38px;
+        margin-top: 15px; }
+        #indiv_center .users_nav .user_nav_con ul li .user_nav_con_img img {
+          margin: 0 auto;
+          display: block; }
+    #indiv_center .users_nav .user_nav_con ul .active {
+      background: #5c636e;
+      color: #fff; }
+#indiv_center .user_con {
+  width: 910px;
+  margin-top: 100px; }
+  #indiv_center .user_con .general_user ul li {
+    display: none;
+    box-shadow: 0 0 15px #e7e7e7; }
+  #indiv_center .user_con .general_user ul .general_user_info {
+    background: #fff;
+    padding: 50px 0 50px 50px; }
+    #indiv_center .user_con .general_user ul .general_user_info .general_user_info_head {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #dadada; }
+      #indiv_center .user_con .general_user ul .general_user_info .general_user_info_head img {
+        width: 105px; }
+      #indiv_center .user_con .general_user ul .general_user_info .general_user_info_head .general_user_info_head_text {
+        margin: 20px 0 0 35px; }
+        #indiv_center .user_con .general_user ul .general_user_info .general_user_info_head .general_user_info_head_text h4 {
+          font-size: 21px;
+          color: #333333;
+          font-weight: 700;
+          margin-bottom: 20px; }
+        #indiv_center .user_con .general_user ul .general_user_info .general_user_info_head .general_user_info_head_text span {
+          color: #666666;
+          font-size: 16px;
+          cursor: pointer; }
+    #indiv_center .user_con .general_user ul .general_user_info .general_user_info_form {
+      margin-top: 25px; }
+      #indiv_center .user_con .general_user ul .general_user_info .general_user_info_form li {
+        display: block;
+        box-shadow: none;
+        color: #666;
+        line-height: 40px;
+        float: left;
+        margin-top: 25px;
+        margin-right: 57px; }
+        #indiv_center .user_con .general_user ul .general_user_info .general_user_info_form li span {
+          font-size: 14px; }
+        #indiv_center .user_con .general_user ul .general_user_info .general_user_info_form li input {
+          line-height: 38px;
+          border: 1px solid #dadada;
+          padding: 0 15px;
+          width: 234px; }
+    #indiv_center .user_con .general_user ul .general_user_info .general_user_info_button {
+      display: block;
+      width: 180px;
+      line-height: 48px;
+      background: #f96d00;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      margin: 50px 0 0 316px; }
+  #indiv_center .user_con .general_user ul .general_user_ertified {
+    padding-top: 25px; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .important {
+      background: url("../img/important.png") no-repeat 64px 12px; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .important_long {
+      background: url("../img/important.png") no-repeat 51px 12px; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form li {
+      display: block;
+      box-shadow: none;
+      color: #666;
+      line-height: 40px;
+      float: left;
+      margin-top: 25px;
+      width: 378px;
+      text-align: right; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form li span {
+        font-size: 14px; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form li input {
+        line-height: 38px;
+        border: 1px solid #dadada;
+        padding: 0 15px;
+        width: 234px; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form li .form-control {
+        border: 1px solid #dadada;
+        box-shadow: none;
+        padding: 0 15px;
+        width: 234px;
+        color: #666666;
+        font-size: 14px;
+        line-height: 38px;
+        border-radius: 0;
+        height: 40px; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form .general_user_ertified_form_getCode {
+      position: relative; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form .general_user_ertified_form_getCode button {
+        display: block;
+        width: 98px;
+        height: 40px;
+        border: 1px solid #fb6d01;
+        color: #fb6d01;
+        background: #fff;
+        position: absolute;
+        right: -110px;
+        top: 0; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 {
+      padding-left: 73px; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 li {
+        display: block;
+        box-shadow: none;
+        color: #666;
+        line-height: 40px;
+        margin-top: 25px; }
+        #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 li span {
+          font-size: 14px; }
+        #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 li input {
+          line-height: 38px;
+          border: 1px solid #dadada;
+          padding: 0 15px;
+          width: 234px;
+          margin-left: 20px; }
+        #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 li .form-control {
+          border: 1px solid #dadada;
+          box-shadow: none;
+          padding: 0 15px;
+          width: 234px;
+          color: #666666;
+          font-size: 14px;
+          line-height: 38px;
+          border-radius: 0;
+          height: 40px; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 .add_button_wrap {
+        font-size: 14px;
+        margin-top: 10px; }
+        #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 .add_button_wrap .add_button img {
+          display: block;
+          margin-top: 15px;
+          margin-right: 10px; }
+        #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 .add_button_wrap .add_button button {
+          border: none;
+          background: #fff;
+          display: block;
+          color: #f96d00;
+          font-size: 16px;
+          line-height: 48px;
+          margin-left: 357px; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form3 {
+      padding: 20px 0 0 115px; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form3 li {
+        display: block;
+        box-shadow: none;
+        color: #666;
+        width: 330px;
+        text-align: center;
+        margin-right: 47px;
+        float: left;
+        font-size: 14px; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form3 .general_user_ertified_form3_wrap {
+        width: 328px;
+        border: 1px dashed #dadada;
+        text-align: center;
+        line-height: 178px;
+        color: #f96d00;
+        cursor: pointer; }
+      #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form3 span {
+        line-height: 70px; }
+    #indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_btn {
+      border: none;
+      width: 180px;
+      line-height: 48px;
+      background: #f96d00;
+      color: #fff;
+      border-radius: 3px;
+      margin: 20px 0 50px 380px; }
+  #indiv_center .user_con .elite_users ul li {
+    display: none;
+    box-shadow: 0 0 15px #e7e7e7; }
+  #indiv_center .user_con .elite_users ul .elite_users_info {
+    background: #fff;
+    padding: 50px 0 50px 50px; }
+    #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_head {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #dadada; }
+      #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_head img {
+        width: 105px; }
+      #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_head .elite_users_info_head_text {
+        margin: 20px 0 0 35px; }
+        #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_head .elite_users_info_head_text h4 {
+          font-size: 21px;
+          color: #333333;
+          font-weight: 700;
+          margin-bottom: 20px; }
+        #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_head .elite_users_info_head_text span {
+          color: #666666;
+          font-size: 16px;
+          cursor: pointer; }
+    #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_form {
+      margin-top: 25px; }
+      #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_form li {
+        display: block;
+        box-shadow: none;
+        color: #666;
+        line-height: 40px;
+        float: left;
+        margin-top: 25px;
+        margin-right: 57px; }
+        #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_form li span {
+          font-size: 14px; }
+        #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_form li input {
+          line-height: 38px;
+          border: 1px solid #dadada;
+          padding: 0 15px;
+          width: 234px; }
+    #indiv_center .user_con .elite_users ul .elite_users_info .elite_users_info_button {
+      display: block;
+      width: 180px;
+      line-height: 48px;
+      background: #f96d00;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      margin: 50px 0 0 316px; }
+  #indiv_center .user_con .elite_users ul .elite_users_ertified {
+    padding-top: 25px; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .important {
+      background: url("../img/important.png") no-repeat 64px 12px; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .important_long {
+      background: url("../img/important.png") no-repeat 51px 12px; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form li {
+      display: block;
+      box-shadow: none;
+      color: #666;
+      line-height: 40px;
+      float: left;
+      margin-top: 25px;
+      width: 378px;
+      text-align: right; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form li span {
+        font-size: 14px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form li input {
+        line-height: 38px;
+        border: 1px solid #dadada;
+        padding: 0 15px;
+        width: 234px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form li .form-control {
+        border: 1px solid #dadada;
+        box-shadow: none;
+        padding: 0 15px;
+        width: 234px;
+        color: #666666;
+        font-size: 14px;
+        line-height: 38px;
+        border-radius: 0;
+        height: 40px; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form .elite_users_ertified_form_getCode {
+      position: relative; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form .elite_users_ertified_form_getCode button {
+        display: block;
+        width: 98px;
+        height: 40px;
+        border: 1px solid #fb6d01;
+        color: #fb6d01;
+        background: #fff;
+        position: absolute;
+        right: -110px;
+        top: 0; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 {
+      padding-left: 73px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 li {
+        display: block;
+        box-shadow: none;
+        color: #666;
+        line-height: 40px;
+        margin-top: 25px; }
+        #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 li span {
+          font-size: 14px; }
+        #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 li input {
+          line-height: 38px;
+          border: 1px solid #dadada;
+          padding: 0 15px;
+          width: 234px;
+          margin-left: 20px; }
+        #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 li .form-control {
+          border: 1px solid #dadada;
+          box-shadow: none;
+          padding: 0 15px;
+          width: 234px;
+          color: #666666;
+          font-size: 14px;
+          line-height: 38px;
+          border-radius: 0;
+          height: 40px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 .add_button_wrap {
+        font-size: 14px;
+        margin-top: 10px; }
+        #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 .add_button_wrap .add_button img {
+          display: block;
+          margin-top: 15px;
+          margin-right: 10px; }
+        #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 .add_button_wrap .add_button button {
+          border: none;
+          background: #fff;
+          display: block;
+          color: #f96d00;
+          font-size: 16px;
+          line-height: 48px;
+          margin-left: 357px; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form3 {
+      padding: 20px 0 0 115px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form3 li {
+        display: block;
+        box-shadow: none;
+        color: #666;
+        width: 330px;
+        text-align: center;
+        margin-right: 47px;
+        float: left;
+        font-size: 14px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form3 .elite_users_ertified_form3_lastLi {
+        margin-left: 191px; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form3 .elite_users_ertified_form3_wrap {
+        width: 328px;
+        border: 1px dashed #dadada;
+        text-align: center;
+        line-height: 178px;
+        color: #f96d00;
+        cursor: pointer; }
+      #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form3 span {
+        line-height: 70px; }
+    #indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_btn {
+      border: none;
+      width: 180px;
+      line-height: 48px;
+      background: #f96d00;
+      color: #fff;
+      border-radius: 3px;
+      margin: 20px 0 50px 380px; }
+  #indiv_center .user_con .public_release {
+    padding: 29px 0 0 48px; }
 
 /*# sourceMappingURL=index.css.map */

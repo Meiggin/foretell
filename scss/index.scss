@@ -36,63 +36,63 @@
 }
 //页码
 
-    /*
-     * 页数按钮样式
-     */
-    .page_div {
-        margin-top: 60px;
-        margin-bottom: 60px;
-        font-size: 15px;
-        font-family: "microsoft yahei";
-        color: #666666;
-        margin-right: 10px;
-    
-        box-sizing: border-box;
-        text-align: center;
-    }
-    .page_div a {
-        min-width: 30px;
-        height: 28px;
-        border: 1px solid #dce0e0!important;
-        text-align: center;
-        margin: 0 4px;
-        cursor: pointer;
-        line-height: 28px;
-        color: #666666;
-        font-size: 13px;
-        display: inline-block;
-        background: #dadada;
-    }
-    
-    #firstPage,
-    #lastPage {
-        width: 50px;
-        color: #0073A9;
-        border: 1px solid #0073A9!important;
-    }
-    
-    #prePage,
-    #nextPage {
-        width: 30px;
-        color: #a3a3a3;
-        border: 1px solid #dadada!important;
-        background: #f2f2f2;
-    }
-    
-    .page_div .current {
-        background-color: #5c636e;
-        color: #FFFFFF;
-    }
-    
-    .totalPages {
-        margin: 0 10px;
-    }
-    
-    .totalPages span,
-    .totalSize span {
-        color: #0073A9;
-        margin: 0 5px;
-    }
+/*
+    * 页数按钮样式
+    */
+.page_div {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 15px;
+    font-family: "microsoft yahei";
+    color: #666666;
+    margin-right: 10px;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+.page_div a {
+    min-width: 30px;
+    height: 28px;
+    border: 1px solid #dce0e0!important;
+    text-align: center;
+    margin: 0 4px;
+    cursor: pointer;
+    line-height: 28px;
+    color: #666666;
+    font-size: 13px;
+    display: inline-block;
+    background: #dadada;
+}
+
+#firstPage,
+#lastPage {
+    width: 50px;
+    color: #0073A9;
+    border: 1px solid #0073A9!important;
+}
+
+#prePage,
+#nextPage {
+    width: 30px;
+    color: #a3a3a3;
+    border: 1px solid #dadada!important;
+    background: #f2f2f2;
+}
+
+.page_div .current {
+    background-color: #5c636e;
+    color: #FFFFFF;
+}
+
+.totalPages {
+    margin: 0 10px;
+}
+
+.totalPages span,
+.totalSize span {
+    color: #0073A9;
+    margin: 0 5px;
+}
 
 //页脚
 #footer{
@@ -1255,4 +1255,493 @@
             }
         }
     }
+}
+
+//个人中心
+#indiv_center{
+    // 导航
+    .users_nav{
+        width: 240px;
+        .user_nav_title{
+            line-height: 100px;
+            span{
+                font-size: 20px;
+                color: #666;
+                cursor: pointer;
+            }
+            .user_nav_title_i{
+                height: 20px;
+                background: #dadada;
+                width: 2px;
+                margin: 40px 0 0 39px;
+            }
+            .active{
+                color: #f96d00;
+            }
+        }
+        .user_nav_con{
+            ul{
+                width: 240px;
+                box-shadow: 0 0 13px #f8f8f8;
+                border-top: 1px solid #dadada;
+                li{
+                    padding: 0 55px;
+                    line-height: 65px;
+                    border-bottom: 1px solid #dadada;
+                    cursor: pointer;
+                    span{
+                        float: right;
+                        font-size: 18px;
+                    }
+                    .user_nav_con_img{
+                        float: left;
+                        width: 38px;
+                        margin-top: 15px;                        
+                        img{
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                    
+                }
+                .active{
+                    background: #5c636e;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .user_con{
+        width: 910px;
+        margin-top: 100px;
+        //普通用户
+        .general_user{
+            ul{
+                li{
+                    display: none;
+                    box-shadow: 0 0 15px #e7e7e7;
+                }
+                //普通个人信息
+                .general_user_info{
+                    background: #fff;
+                    padding: 50px 0 50px 50px;
+                    .general_user_info_head{
+                        padding-bottom: 30px;
+                        border-bottom: 1px solid #dadada;
+                        img{
+                            width: 105px;
+                        }
+                        .general_user_info_head_text{
+                            margin: 20px 0 0 35px;
+                            h4{
+                                font-size: 21px;
+                                color: #333333;
+                                font-weight: 700;
+                                margin-bottom: 20px;
+                            }
+                            span{
+                                color: #666666;
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .general_user_info_form{
+                        margin-top: 25px;
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666;
+                            line-height: 40px;
+                            float: left;
+                            margin-top: 25px;
+                            margin-right: 57px;
+                            span{
+                                font-size: 14px;
+                            }
+                            input{
+                                line-height: 38px;
+                                border: 1px solid #dadada;
+                                padding: 0 15px;
+                                width: 234px;
+                            }
+                        }
+                    }
+                    .general_user_info_button{
+                        display: block;
+                        width: 180px;
+                        line-height: 48px;
+                        background: #f96d00;
+                        color: #fff;
+                        font-size: 16px;
+                        border: none;
+                        border-radius: 3px;
+                        margin: 50px 0 0 316px;
+                    }
+                }
+                //普通个人认证
+                .general_user_ertified{
+                    padding-top: 25px;
+                    .important{
+                        background: url('../img/important.png') no-repeat 64px 12px;
+                    }
+                    .important_long{
+                        background: url('../img/important.png') no-repeat 51px 12px;
+                    }
+                    .general_user_ertified_form{
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666;
+                            line-height: 40px;
+                            float: left;
+                            margin-top: 25px;
+                            width: 378px;
+                            text-align: right;
+                            span{
+                                font-size: 14px;
+                            }
+                            input{
+                                line-height: 38px;
+                                border: 1px solid #dadada;
+                                padding: 0 15px;
+                                width: 234px;
+                            }
+                            .form-control {
+                                border: 1px solid #dadada;
+                                box-shadow: none;
+                                padding: 0 15px;
+                                width: 234px;
+                                color: #666666;
+                                font-size: 14px;
+                                line-height: 38px;
+                                border-radius: 0;
+                                height: 40px;
+                            }
+                        }
+                        .general_user_ertified_form_getCode{
+                            position: relative;
+                            button{
+                                display: block;
+                                width:98px;
+                                height:40px;
+                                border: 1px solid #fb6d01;
+                                color: #fb6d01;
+                                background: #fff;
+                                position: absolute;
+                                right:-110px;
+                                top:0;
+                            }
+                        }
+                    }
+                    .general_user_ertified_form2{
+                        padding-left:   73px;
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666;
+                            line-height: 40px;
+                            margin-top: 25px;
+                            span{
+                                font-size: 14px;
+                            }
+                            input{
+                                line-height: 38px;
+                                border: 1px solid #dadada;
+                                padding: 0 15px;
+                                width: 234px;
+                                margin-left: 20px;
+                            }
+                            .form-control {
+                                border: 1px solid #dadada;
+                                box-shadow: none;
+                                padding: 0 15px;
+                                width: 234px;
+                                color: #666666;
+                                font-size: 14px;
+                                line-height: 38px;
+                                border-radius: 0;
+                                height: 40px;
+                            }
+                            
+                        }
+                        .add_button_wrap{
+                            font-size: 14px;
+                            margin-top: 10px;
+                            .add_button{
+                                img{
+                                    display: block;
+                                    margin-top: 15px;
+                                    margin-right: 10px;
+                                }
+                                button{
+                                    border: none;
+                                    background: #fff;
+                                    display: block;
+                                    color: #f96d00;
+                                    font-size: 16px;
+                                    line-height: 48px;
+                                    margin-left:357px;
+                                }
+                            }
+                        }
+                    }
+                    .general_user_ertified_form3{
+                        padding: 20px 0 0 115px;
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666; 
+                            width: 330px;
+                            text-align: center;
+                            margin-right: 47px;
+                            float: left;
+                            font-size: 14px;
+                            
+                        }
+                        .general_user_ertified_form3_wrap{ 
+                            width: 328px;
+                            border: 1px dashed #dadada;
+                            text-align: center;
+                            line-height: 178px;
+                            color: #f96d00;
+                            cursor: pointer;
+                        }
+                        span{
+                            line-height: 70px;
+                            
+                        }
+                    }
+                    .general_user_ertified_btn{
+                        border: none;
+                        width: 180px;
+                        line-height: 48px;
+                        background: #f96d00;
+                        color: #fff;
+                        border-radius: 3px;
+                        margin: 20px 0 50px 380px;                        
+                    }
+                }
+            }
+        }
+        //精英客户
+        .elite_users{
+            ul{
+                
+                li{
+                    display: none;
+                    box-shadow: 0 0 15px #e7e7e7;
+                }
+                //精英客户个人信息
+                .elite_users_info{
+                    background: #fff;
+                    padding: 50px 0 50px 50px;
+                    .elite_users_info_head{
+                        padding-bottom: 30px;
+                        border-bottom: 1px solid #dadada;
+                        img{
+                            width: 105px;
+                        }
+                        .elite_users_info_head_text{
+                            margin: 20px 0 0 35px;
+                            h4{
+                                font-size: 21px;
+                                color: #333333;
+                                font-weight: 700;
+                                margin-bottom: 20px;
+                            }
+                            span{
+                                color: #666666;
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .elite_users_info_form{
+                        margin-top: 25px;
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666;
+                            line-height: 40px;
+                            float: left;
+                            margin-top: 25px;
+                            margin-right: 57px;
+                            span{
+                                font-size: 14px;
+                            }
+                            input{
+                                line-height: 38px;
+                                border: 1px solid #dadada;
+                                padding: 0 15px;
+                                width: 234px;
+                            }
+                        }
+                    }
+                    .elite_users_info_button{
+                        display: block;
+                        width: 180px;
+                        line-height: 48px;
+                        background: #f96d00;
+                        color: #fff;
+                        font-size: 16px;
+                        border: none;
+                        border-radius: 3px;
+                        margin: 50px 0 0 316px;
+                    }
+                }
+                //精英客户个人认证
+                .elite_users_ertified{
+                    padding-top: 25px;
+                    .important{
+                        background: url('../img/important.png') no-repeat 64px 12px;
+                    }
+                    .important_long{
+                        background: url('../img/important.png') no-repeat 51px 12px;
+                    }
+                    .elite_users_ertified_form{
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666;
+                            line-height: 40px;
+                            float: left;
+                            margin-top: 25px;
+                            width: 378px;
+                            text-align: right;
+                            span{
+                                font-size: 14px;
+                            }
+                            input{
+                                line-height: 38px;
+                                border: 1px solid #dadada;
+                                padding: 0 15px;
+                                width: 234px;
+                            }
+                            .form-control {
+                                border: 1px solid #dadada;
+                                box-shadow: none;
+                                padding: 0 15px;
+                                width: 234px;
+                                color: #666666;
+                                font-size: 14px;
+                                line-height: 38px;
+                                border-radius: 0;
+                                height: 40px;
+                            }
+                        }
+                        .elite_users_ertified_form_getCode{
+                            position: relative;
+                            button{
+                                display: block;
+                                width:98px;
+                                height:40px;
+                                border: 1px solid #fb6d01;
+                                color: #fb6d01;
+                                background: #fff;
+                                position: absolute;
+                                right:-110px;
+                                top:0;
+                            }
+                        }
+                    }
+                    .elite_users_ertified_form2{
+                        padding-left:   73px;
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666;
+                            line-height: 40px;
+                            margin-top: 25px;
+                            span{
+                                font-size: 14px;
+                            }
+                            input{
+                                line-height: 38px;
+                                border: 1px solid #dadada;
+                                padding: 0 15px;
+                                width: 234px;
+                                margin-left: 20px;
+                            }
+                            .form-control {
+                                border: 1px solid #dadada;
+                                box-shadow: none;
+                                padding: 0 15px;
+                                width: 234px;
+                                color: #666666;
+                                font-size: 14px;
+                                line-height: 38px;
+                                border-radius: 0;
+                                height: 40px;
+                            }
+                            
+                        }
+                        .add_button_wrap{
+                            font-size: 14px;
+                            margin-top: 10px;
+                            .add_button{
+                                img{
+                                    display: block;
+                                    margin-top: 15px;
+                                    margin-right: 10px;
+                                }
+                                button{
+                                    border: none;
+                                    background: #fff;
+                                    display: block;
+                                    color: #f96d00;
+                                    font-size: 16px;
+                                    line-height: 48px;
+                                    margin-left:357px;
+                                }
+                            }
+                        }
+                    }
+                    .elite_users_ertified_form3{
+                        padding: 20px 0 0 115px;
+                        li{
+                            display: block;
+                            box-shadow: none;
+                            color: #666; 
+                            width: 330px;
+                            text-align: center;
+                            margin-right: 47px;
+                            float: left;
+                            font-size: 14px;
+                            
+                        }
+                        .elite_users_ertified_form3_lastLi{
+                            margin-left: 191px;
+                        }
+                        .elite_users_ertified_form3_wrap{ 
+                            width: 328px;
+                            border: 1px dashed #dadada;
+                            text-align: center;
+                            line-height: 178px;
+                            color: #f96d00;
+                            cursor: pointer;
+                        }
+                        span{
+                            line-height: 70px;
+                            
+                        }
+                    }
+                    .elite_users_ertified_btn{
+                        border: none;
+                        width: 180px;
+                        line-height: 48px;
+                        background: #f96d00;
+                        color: #fff;
+                        border-radius: 3px;
+                        margin: 20px 0 50px 380px;                        
+                    }
+                }
+            }
+        }
+        // 双方公共
+        .public_release{
+            padding: 29px 0 0 48px;
+        }
+    }
+    
 }

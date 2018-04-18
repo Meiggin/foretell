@@ -17,12 +17,18 @@ button:focus{
 .right{
     float: right;
 }
+.block{
+    display: block !important;
+}
+.none{
+    display: none;
+}
 /*万能清除法*/
 .clear{zoom:1;}/*清除ie的浮动*/
 .clear:before{content:"";display:table;}
 .clear:after{content:"";clear:both;display:block;}
 .margin-left-0{
-    margin-left:0;
+    margin-left:0 !important;
 }
 .margin-top-5{
     margin-top:5px;
