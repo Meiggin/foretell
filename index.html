@@ -127,7 +127,7 @@
                 <li>
                     <a href="#"><img src="./img/skill.png" alt=""></a>
                 </li>
-                <li>
+                <li class="margin-right-0">
                     <a href="#"><img src="./img/skill.png" alt=""></a>
                 </li>
             </ul>
@@ -283,6 +283,7 @@
             $('.skill_tabs_tag li').on('click',function(){
                 $(this).addClass('active').siblings('.skill_tabs_tag li').removeClass('active')
             })
+            $('.skill_tabs_guide li:last').css('margin-right','0')
         })
     </script>
 </body>
