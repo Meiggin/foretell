@@ -395,9 +395,13 @@
     <script src="./js/jquery-2.1.4.js"></script>
     <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/ie_input_placeholder.js"></script>
     <script src="./js/paging.js"></script>
     <script>
         $(function(){
+            
+            console.log(IEVersion())  
+            var ienum =   IEVersion()
             if (window.ActiveXObject || "ActiveXObject" in window){
 
                 // alert("ie")
@@ -406,7 +410,11 @@
                     var pla = $(this).attr('placeholder')
                     $(this).val(pla)
                 })
-                $('.elite_search_input ul li select').css('height','34px')
+                if(ienum <= 9 ){
+                    $('.elite_search_input ul li select').css('height','48px')
+                }else{
+                    $('.elite_search_input ul li select').css('height','34px')
+                }
             }else{
 
                 // alert("not ie")

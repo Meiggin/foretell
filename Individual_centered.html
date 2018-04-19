@@ -1516,10 +1516,12 @@
     
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/paging.js"></script>
+    <script src="./js/ie_input_placeholder.js"></script>
     <script>
         $(function(){
             // ie 兼容
             $('input').css('height','38px')
+            var ienum =   IEVersion()
             if (window.ActiveXObject || "ActiveXObject" in window){
 
                 // alert("ie")
@@ -1538,8 +1540,11 @@
                     width:'88px',
                     height:'36px'
                 })
-                $('.important_long').css('background-position','20px 12px')
-                $('.important').css('background-position','33px 12px')
+                
+                if(ienum <= 9){
+                    $('.important_long').css('background-position','20px 12px')
+                    $('.important').css('background-position','33px 12px')
+                }
                 
             }else{
             
