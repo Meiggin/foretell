@@ -133,6 +133,22 @@
     </div>
     <script src="../js/jquery-2.1.4.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    
+    <script>
+    $(function(){
+        if (window.ActiveXObject || "ActiveXObject" in window){
+
+        // alert("ie")
+
+        $('input').each(function(){
+            var pla = $(this).attr('placeholder')
+            $(this).val(pla)
+        })
+        }else{
+
+        // alert("not ie")
+
+        }
+    })
+    </script>
 </body>
 </html>

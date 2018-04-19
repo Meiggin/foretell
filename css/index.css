@@ -541,6 +541,12 @@
   margin-right: 10px; }
   #elite_page .elite_search .elite_search_input ul li .form-control {
     width: 168px; }
+  #elite_page .elite_search .elite_search_input ul li .dropdown-toggle {
+    background: #fff;
+    border: 1px solid #dadada;
+    color: #666;
+    width: 168px;
+    height: 34px; }
 #elite_page .elite_search .elite_search_input ul button {
   width: 80px;
   height: 34px;

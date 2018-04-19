@@ -355,6 +355,19 @@
     <script src="./js/paging.js"></script>
     <script>
         $(function(){
+            if (window.ActiveXObject || "ActiveXObject" in window){
+
+            // alert("ie")
+
+            $('input').each(function(){
+                var pla = $(this).attr('placeholder')
+                $(this).val(pla)
+            })
+            }else{
+
+            // alert("not ie")
+
+            }
             // 下单保研全程辅导ul按钮点击
             $('.intro_teacher_card_form_type button').on('click',function(){
                 $(this).addClass('active').siblings('.intro_teacher_card_form_type button').removeClass('active')

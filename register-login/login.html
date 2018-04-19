@@ -215,6 +215,19 @@
         <script src="../js/bootstrap.min.js"></script>
         <script>
             $(function(){
+                if (window.ActiveXObject || "ActiveXObject" in window){
+
+                // alert("ie")
+
+                $('input').each(function(){
+                    var pla = $(this).attr('placeholder')
+                    $(this).val(pla)
+                })
+                }else{
+
+                // alert("not ie")
+
+                }
                 //密码登陆验证码登陆tab切换
                 $('.login_title').on('click',function(){
                     $(this).addClass('active').siblings('.login_title').removeClass('active')
