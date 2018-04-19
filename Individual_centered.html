@@ -169,6 +169,7 @@
                         </ul>
                         <button class="general_user_info_button">保存修改</button>
                     </li>
+
                     <!--  个人认证  -->
                     <li class="general_user_ertified">
                         <ul class="general_user_ertified_form clear">
@@ -342,32 +343,444 @@
                         </ul>
                         <button class="general_user_ertified_btn">保存认证</button>
                     </li>
+
                     <!-- 产品发布 -->
                     <li class="public_release">
                         <span class="announcement">经我方认证的精英用户才可发布保研服务产品</span>
-                        <div>
+                        <div class="public_release_title">
                             <span>保研标题：</span>
                             <input type="text" value="某某">
                         </div>
-                        <div>
-                            <span>服务项目：</span>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                        <div class="public_release_textarea clear">
+                            <span class="left">服务项目：</span>
+                            <textarea class="form-control left" rows="4" ></textarea>
+                        </div>
+
+                        <div class="public_release_c">
+                            <div class="margin-top-20 intro_teacher_card_form_select clear">
+                                <span class="left">产品标题：</span>
+                                <input type="text" value="某某" class="left">
+                                <span class="left margin-left-70">产品内容：</span>
+                                <input class="left intro_teacher_card_form_select_input2" value="家教150/次">
+                                <div class="intro_teacher_card_form_select_input clear left">
+                                    <span class="left">数量</span>
+                                    <select class="form-control form_default right">
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <span class="left margin-left-10">月</span>
+                            </div>
+                        </div>
+
+                        <div class="public_release_textarea clear">
+                            <span class="left">服务项目：</span>
+                            <textarea class="form-control left" rows="4" ></textarea>
+                        </div>
+
+                        <!-- 添加 -->
+                        <div class="add_button_wrap">
+                            <div class="add_button">
+                                <button class="clear"> <img src="./img/add.png" alt="" class="left">添加</button>
+                            </div>
+                        </div>
+                        <!-- 技能简介 -->
+                        <div class="public_release_textarea clear">
+                            <span class="left">技能简介：</span>
+                            <textarea class="form-control left" rows="4" ></textarea>
+                        </div>
+
+                        <div class="public_release_textarea clear">
+                            <span class="left">个人简介：</span>
+                            <textarea class="form-control left" rows="4" ></textarea>
+                        </div>
+
+                        <div class="public_release_textarea clear">
+                            <span class="left">成长历程：</span>
+                            <textarea class="form-control left" rows="4" ></textarea>
+                        </div>
+
+                        <button class="general_user_ertified_btn">保存发布</button>
+                    </li>
+
+                    <!-- 账户信息 -->
+                    <li class="public_useInfo">
+                        <ul class="public_useInfo_ul">
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">先知网账号</span>
+                                <span class="left public_useInfo_ul_tel">15555555555</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">先知网账号</span>
+                                <span class="left public_useInfo_ul_tel">15555555555</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">密码</span>
+                                <span class="left public_useInfo_ul_tel">******</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">姓名</span>
+                                <span class="left public_useInfo_ul_tel">王某某</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">国籍/地区</span>
+                                <span class="left public_useInfo_ul_tel">中国大陆</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">证件类型/号码</span>
+                                <span class="left public_useInfo_ul_tel">中华人民共和国居民身份证 3****************9</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                            <li class="clear">
+                                <img src="./img/wellOk.png" alt="" class="left">
+                                <span class="left public_useInfo_ul_user">我的钱包</span>
+                                <span class="left public_useInfo_ul_tel">已绑定中国银行6216 **** **** ***1 380</span>
+                                <a href="#" class="right">【修改】</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- 我的消息 -->
+                    <li class="public_news">
+                        <div class="public_news_title clear">
+                            <span class="margin-right-50 active">未读消息</span>
+                            <span>已读消息</span>
+                        </div>
+                        <div class="public_news_con">
+                            <div class="public_news_con_select_all clear">
+                                <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                <span class="left">全部</span>
+                                <button class="right">删除</button>
+                            </div>
+                            <ul class="public_news_con_list clear">
+                                <li class="clear active">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="page" class="page_div"></div>
+                    </li>
+
+                    <!-- 浏览记录 -->
+                    <li class="public_news">
+                        <div class="public_news_con">
+                            <div class="public_news_con_select_all clear">
+                                <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                <span class="left">全部</span>
+                                <button class="right">删除</button>
+                            </div>
+                            <ul class="public_news_con_list clear">
+                                <li class="clear active">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="page4" class="page_div"></div>
+                    </li>
+
+                    <!-- 我的钱包 -->
+                    <li class="public_balance">
+                        <h4>我的余额</h4>
+                        <div class="public_div_balance clear">
+                            <div class="public_mine_balance left">
+                                <span>全部余额</span>
+                                <p>4200.00元</p>
+                            </div>
+                            <div class="public_usable_balance left">
+                                <span>可提现余额</span>
+                                <p>1200.00元</p>
+                            </div>
+                            <div class="public_usable_balance_button">
+                                <button>充值</button>
+                                <button>提现</button>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        4
-                    </li>
-                    <li>
-                        5
-                    </li>
-                    <li>
-                        6
-                    </li>
-                    <li>
-                        7
-                    </li>
-                    <li>
-                        8
+
+                    <!-- 我的收藏 -->
+                    <li class="public_news">
+                        <div class="public_news_con">
+                            <div class="public_news_con_select_all clear">
+                                <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                <span class="left">全部</span>
+                                <button class="right">删除</button>
+                            </div>
+                            <ul class="public_news_con_list clear">
+                                <li class="clear active">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                                <li class="clear">
+                                    <div class="public_news_con_list_l left">
+                                        <img src="./img/new.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    <div class="public_news_con_list_r right">
+                                        <span class="left">2018-01-16</span>
+                                        <i class="left"></i>
+                                        <button class="left">查看</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="page5" class="page_div"></div>
                     </li>
                 </ul>
             </div>
@@ -594,24 +1007,436 @@
                             </ul>
                             <button class="elite_users_ertified_btn">保存认证</button>
                         </li>
+                        <!-- 产品发布 -->
+                        <li class="public_release">
+                            <span class="announcement">经我方认证的精英用户才可发布保研服务产品</span>
+                            <div class="public_release_title">
+                                <span>保研标题：</span>
+                                <input type="text" value="某某">
+                            </div>
+                            <div class="public_release_textarea clear">
+                                <span class="left">服务项目：</span>
+                                <textarea class="form-control left" rows="4" ></textarea>
+                            </div>
+                            <div class="public_release_c">
+                                <div class="margin-top-20 intro_teacher_card_form_select clear">
+                                    <span class="left">产品标题：</span>
+                                    <input type="text" value="某某" class="left">
+                                    <span class="left margin-left-70">产品内容：</span>
+                                    <input class="left intro_teacher_card_form_select_input2" value="家教150/次">
+                                    <div class="intro_teacher_card_form_select_input clear left">
+                                        <span class="left">数量</span>
+                                        <select class="form-control form_default right">
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <span class="left margin-left-10">月</span>
+                                </div>
+                            </div>
+                            <div class="public_release_textarea clear">
+                                <span class="left">服务项目：</span>
+                                <textarea class="form-control left" rows="4" ></textarea>
+                            </div>
+                            <!-- 添加 -->
+                            <div class="add_button_wrap">
+                                <div class="add_button">
+                                    <button class="clear"> <img src="./img/add.png" alt="" class="left">添加</button>
+                                </div>
+                            </div>
+                            <!-- 技能简介 -->
+                            <div class="public_release_textarea clear">
+                                <span class="left">技能简介：</span>
+                                <textarea class="form-control left" rows="4" ></textarea>
+                            </div>
+                            <div class="public_release_textarea clear">
+                                <span class="left">个人简介：</span>
+                                <textarea class="form-control left" rows="4" ></textarea>
+                            </div>
+                            <div class="public_release_textarea clear">
+                                <span class="left">成长历程：</span>
+                                <textarea class="form-control left" rows="4" ></textarea>
+                            </div>
+                            <button class="general_user_ertified_btn">保存发布</button>
+                        </li>
 
-                        <li>
-                            3
+                        <!-- 账户信息 -->
+                        <li class="public_useInfo">
+                            <ul class="public_useInfo_ul">
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">先知网账号</span>
+                                    <span class="left public_useInfo_ul_tel">15555555555</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">先知网账号</span>
+                                    <span class="left public_useInfo_ul_tel">15555555555</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">密码</span>
+                                    <span class="left public_useInfo_ul_tel">******</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">姓名</span>
+                                    <span class="left public_useInfo_ul_tel">王某某</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">国籍/地区</span>
+                                    <span class="left public_useInfo_ul_tel">中国大陆</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">证件类型/号码</span>
+                                    <span class="left public_useInfo_ul_tel">中华人民共和国居民身份证 3****************9</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                                <li class="clear">
+                                    <img src="./img/wellOk.png" alt="" class="left">
+                                    <span class="left public_useInfo_ul_user">我的钱包</span>
+                                    <span class="left public_useInfo_ul_tel">已绑定中国银行6216 **** **** ***1 380</span>
+                                    <a href="#" class="right">【修改】</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            4
+
+                        <!-- 我的消息 -->
+                        <li class="public_news">
+                            <div class="public_news_title clear">
+                                <span class="margin-right-50 active">未读消息</span>
+                                <span>已读消息</span>
+                            </div>
+                            <div class="public_news_con">
+                                <div class="public_news_con_select_all clear">
+                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                    <span class="left">全部</span>
+                                    <button class="right">删除</button>
+                                </div>
+                                <ul class="public_news_con_list clear">
+                                    <li class="clear active">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="page2" class="page_div"></div>
                         </li>
-                        <li>
-                            5
+    
+                        <!-- 浏览记录 -->
+                        <li class="public_news">
+                            <div class="public_news_con">
+                                <div class="public_news_con_select_all clear">
+                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                    <span class="left">全部</span>
+                                    <button class="right">删除</button>
+                                </div>
+                                <ul class="public_news_con_list clear">
+                                    <li class="clear active">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="page3" class="page_div"></div>
                         </li>
-                        <li>
-                            6
+    
+                        <!-- 我的钱包 -->
+                        <li class="public_balance">
+                            <h4>我的余额</h4>
+                            <div class="public_div_balance clear">
+                                <div class="public_mine_balance left">
+                                    <span>全部余额</span>
+                                    <p>4200.00元</p>
+                                </div>
+                                <div class="public_usable_balance left">
+                                    <span>可提现余额</span>
+                                    <p>1200.00元</p>
+                                </div>
+                                <div class="public_usable_balance_button">
+                                    <button>充值</button>
+                                    <button>提现</button>
+                                </div>
+                            </div>
                         </li>
-                        <li>
-                            7
-                        </li>
-                        <li>
-                            8
+    
+                        <!-- 我的收藏 -->
+                        <li class="public_news">
+                            <div class="public_news_con">
+                                <div class="public_news_con_select_all clear">
+                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                    <span class="left">全部</span>
+                                    <button class="right">删除</button>
+                                </div>
+                                <ul class="public_news_con_list clear">
+                                    <li class="clear active">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                    <li class="clear">
+                                        <div class="public_news_con_list_l left">
+                                            <img src="./img/new.png" alt="" class="left margin-right-10">
+                                            <span class="left">全部</span>
+                                        </div>
+                                        <div class="public_news_con_list_r right">
+                                            <span class="left">2018-01-16</span>
+                                            <i class="left"></i>
+                                            <button class="left">查看</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="page6" class="page_div"></div>
                         </li>
                     </ul>
             </div>
@@ -723,6 +1548,69 @@
                     $('.elite_users ul li:nth-child('+(index+1)+')').addClass('block').siblings().removeClass('block')
                 })
 
+            })
+
+
+
+            //我的消息点击
+            $('.public_news_title span').on('click',function(){
+                $(this).addClass('active').siblings('.public_news_title span').removeClass('active')
+            })
+            //判断分页------------------------------
+            //普通用户我的信息分页
+            $("#page").paging({
+                pageNo:1,
+                totalPage: 9,
+                callback: function(num) {
+                    // alert(num)
+                    //回掉函数
+                }
+            })
+            //精英用户我的信息分页
+            
+            $("#page2").paging({
+                pageNo:1,
+                totalPage: 9,
+                callback: function(num) {
+                    // alert(num)
+                    //回掉函数
+                }
+            })
+            // 精英浏览记录分页
+            $("#page3").paging({
+                pageNo:1,
+                totalPage: 9,
+                callback: function(num) {
+                    // alert(num)
+                    //回掉函数
+                }
+            })
+            // 普通浏览记录分页
+            $("#page4").paging({
+                pageNo:1,
+                totalPage: 9,
+                callback: function(num) {
+                    // alert(num)
+                    //回掉函数
+                }
+            })
+            //普通我的收藏分页
+            $("#page5").paging({
+                pageNo:1,
+                totalPage: 9,
+                callback: function(num) {
+                    // alert(num)
+                    //回掉函数
+                }
+            })
+            //精英我的收藏分页
+            $("#page6").paging({
+                pageNo:1,
+                totalPage: 9,
+                callback: function(num) {
+                    // alert(num)
+                    //回掉函数
+                }
             })
         })
     </script>

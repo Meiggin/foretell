@@ -1739,8 +1739,287 @@
             }
         }
         // 双方公共
+
+        // 产品发布
         .public_release{
             padding: 29px 0 0 48px;
+            .announcement{
+                color: #f96d00;
+                font-size: 14px;
+            }
+            .public_release_title{
+                display: block;
+                box-shadow: none;
+                color: #666;
+                line-height: 40px;
+                margin-top: 25px;
+                margin-right: 57px;
+                span{
+                    font-size: 14px;
+                }
+                input{
+                    line-height: 38px;
+                    border: 1px solid #dadada;
+                    padding: 0 15px;
+                    width: 234px;
+                }
+            }
+            .public_release_textarea{
+                color: #666;
+                margin-top: 25px;
+                margin-right: 57px;
+                span{
+                    font-size: 14px;
+                }
+                textarea{
+                    line-height: 38px;
+                    border: 1px solid #dadada;
+                    width: 692px;
+                    border-radius:0;
+                    box-shadow: none;
+                    font-size: 14px;
+                    margin-left: 3px;
+                }
+            }
+            .public_release_c{
+                border-top: 1px solid #393e46;
+                margin-top: 25px;
+                .intro_teacher_card_form_select{
+                    color: #666;
+                    display: block;
+                    box-shadow: none;
+                    line-height: 38px;
+                    margin-top: 50px;
+                    span{
+                        font-size: 14px;
+                    }
+                    input{
+                        line-height: 38px;
+                        border: 1px solid #dadada;
+                        padding: 0 15px;
+                        width: 234px;
+                        margin-left: 3px;
+                    }
+                    .intro_teacher_card_form_select_input2{
+                        width:149px;
+                    }
+                    .intro_teacher_card_form_select_input{
+                        width: 149px;
+                        
+                        background: #fff;
+                        border: 1px solid #e0e0e0;
+                        color: #666666;
+                        margin-left: 15px;
+                        span{
+                            margin-left: 20px;
+                        }
+                        select{
+                            border: none;
+                            box-shadow: none;
+                            padding: 0;
+                            width: 88px;
+                            color: #666666;
+                            font-size: 12px;
+                            line-height: 38px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+            .add_button_wrap{
+                font-size: 14px;
+                border-bottom: 1px solid #dadada;
+                .add_button{
+                    img{
+                        display: block;
+                        margin-top: 30px;
+                        margin-right: 10px;
+                    }
+                    button{
+                        border: none;
+                        background: #fff;
+                        display: block;
+                        color: #f96d00;
+                        line-height: 78px;                        
+                        font-size: 16px;
+                        margin-left:357px;
+                    }
+                }
+            }
+            .general_user_ertified_btn{
+                border: none;
+                width: 180px;
+                line-height: 48px;
+                background: #f96d00;
+                color: #fff;
+                border-radius: 3px;
+                margin: 20px 0 50px 317px;                        
+            }
+        }
+
+        // 账户信息
+        .public_useInfo{
+            .public_useInfo_ul{
+                padding:26px 0 40px 50px; 
+                li{
+                    display: block;
+                    box-shadow: none;
+                    width: 667px;
+                    line-height: 38px;
+                    font-size: 14px;
+                    color: #333;
+                    background: #f2f2f2;
+                    border: 1px solid #dadada;
+                    padding: 0 70px 0 25px;
+                    margin-top: 24px;
+                    img{
+                        margin-top: 6px;
+                    }
+                    .public_useInfo_ul_user{
+                        margin-left: 20px;
+                        width: 128px;
+                    }
+                    .public_useInfo_ul_tel{
+                        color: #666;
+                    }
+                    a{
+                        color: #f96d00;
+                    }
+                }
+            }
+        }
+
+        // 我的钱包
+        .public_balance{
+            padding: 30px 96px 0 50px;
+            h4{
+                line-height: 63px;
+                color: #333333;
+                font-size: 22px;
+                font-weight: 500;
+                border-bottom: 1px solid #dadada;
+            }
+            .public_div_balance{
+                margin-top: 20px;
+                font-weight: 600;
+                .public_mine_balance{
+                    width: 321px;
+                    height: 128px;
+                    background: #f2f2f2; 
+                    padding: 34px 0 0 24px; 
+                    margin-right: 30px;  
+                    span{
+                        font-size: 14px;
+                        color: #333; 
+                    }
+                    p{
+                        margin-top: 50px;
+                        font-size: 28px;
+                        color: #f96d00;
+                    }
+                }
+                .public_usable_balance{
+                    width: 321px;
+                    height: 128px;
+                    background: #f2f2f2; 
+                    padding: 34px 0 0 24px;  
+                    span{
+                        font-size: 14px;
+                        color: #333; 
+                    }
+                    p{
+                        margin-top: 50px;
+                        font-size: 28px;
+                        color: #f96d00;
+                    }
+                }
+                .public_usable_balance_button{
+                    padding-left: 360px;
+                    padding-bottom: 170px;
+                    button{
+                        width: 82px;
+                        line-height: 40px;
+                        background: #5c636e;
+                        color: #fff;
+                        border-radius: 4px;
+                        border: none;
+                        margin-top: 30px;
+                        margin-left: 70px;
+                    }
+                }
+                
+            }
+        }
+
+        // 我的消息
+        .public_news{
+            padding: 12px 0 50px 50px;            
+            .public_news_title{
+                font-size: 16px;
+                color: #333;
+                line-height: 54px;
+                border-bottom: 1px solid #dadada;
+                span{
+                    float: left;
+                    cursor: pointer;
+                }
+                .active{
+                    color: #f96d00;
+                    border-bottom: 2px solid #f96d00;
+                }
+            }
+            .public_news_con{
+                width: 765px;
+                line-height: 24px;
+                margin: 30px 0 0 0;
+                .public_news_con_select_all{
+                    padding-bottom: 22px;
+                    button{
+                        background: #fff;
+                        border: none;
+                        color: #f96d00;
+                    }
+                }
+                .public_news_con_list{
+                    li{
+                        display: block;
+                        box-shadow: none;
+                        color: #333;
+                        line-height: 24px;
+                        padding: 8px 0;
+                        border-bottom: 1px solid #dadada;
+                        margin-top: 20px;
+                    }
+                    li:last-child{
+                        border-bottom: none;
+                    }
+                    .public_news_con_list_r{
+                        span{
+                            font-size: 12px;
+                        }
+                        button{
+                            background: #fff;
+                            border: none;
+                            color: #666;
+                            margin-top: -1px;
+                        }
+                        button:hover{
+                            background: #f96d00;
+                            color: #fff;
+                            border-radius: 4px;
+                        }
+                        i{
+                            width: 2px;
+                            height: 16px;
+                            background:#c6c6c6;
+                            margin: 6px 10px 0px 10px;
+                        }
+                    }
+                    .active{
+                        
+                    }
+                }
+            }
         }
     }
     

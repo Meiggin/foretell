@@ -25,5 +25,5 @@ fine
     > finish
 
 * personal center
-    > in progress 
+    > finish
 * template
