@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/bootstrap.css">    
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/public.css">
+    <style>
+
+    </style>
 </head>
 <body>
     <!-- 公共头 -->
@@ -79,25 +82,12 @@
                         <input type="text" class="form-control" placeholder="研究生" value="">
                     </li>
                     <li>
-                        <select class="form-control form_default">
-                            <option style="color:#999;"  disabled selected>--所在省市--</option>
-                            <option>2</option>
+                        <select class="form-control form_default right select_con">
+                            <option disabled="disabled"  selected="">--所在省市--</option>
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <!-- <div class="input-group">
-                            <div class="input-group-btn">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--所在省市--<span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
                     </li>
                     <li>
                         <input type="text" class="form-control" placeholder="请输入学校">
@@ -399,21 +389,30 @@
     <script src="./js/paging.js"></script>
     <script>
         $(function(){
-            
             console.log(IEVersion())  
             var ienum =   IEVersion()
             if (window.ActiveXObject || "ActiveXObject" in window){
 
                 // alert("ie")
 
-                $('.elite_search_input ul li input').each(function(){
-                    var pla = $(this).attr('placeholder')
-                    $(this).val(pla)
-                })
-                if(ienum <= 9 ){
+                
+                if(0<ienum <= 9 ){
+                    $('input').each(function(){
+                        var pla = $(this).attr('placeholder')
+                        $(this).val(pla)
+                    })
                     $('.elite_search_input ul li select').css('height','48px')
                 }else{
                     $('.elite_search_input ul li select').css('height','34px')
+                }
+                if(0<ienum < 9){
+                    $('.select_con').css('padding','12px 10px')
+                }
+                if(ienum == -1){
+                    $('.select_con').css({
+                        padding:'0 10px',
+                        border:'1px solid #ccc'
+                    })
                 }
             }else{
 

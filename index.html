@@ -278,17 +278,21 @@
     </div>
     <script src="./js/jquery-2.1.4.js"></script>
     <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/ie_input_placeholder.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
         $(function(){
+            var ienum =   IEVersion()
             if (window.ActiveXObject || "ActiveXObject" in window){
 
             // alert("ie")
-
-            $('input').each(function(){
-                var pla = $(this).attr('placeholder')
-                $(this).val(pla)
-            })
+            if(0<ienum<=9){
+                $('input').each(function(){
+                    var pla = $(this).attr('placeholder')
+                    $(this).val(pla)
+                })
+            }
+           
             }else{
 
             // alert("not ie")

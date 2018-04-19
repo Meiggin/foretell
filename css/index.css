@@ -1530,4 +1530,14 @@
     font-size: 64px;
     color: #333; }
 
+.select_div {
+  margin-left: 20px;
+  background: #000; }
+
+.select_con {
+  height: 34px;
+  line-height: 30px;
+  padding: 0 10px;
+  width: 168px; }
+
 /*# sourceMappingURL=index.css.map */
