@@ -1475,6 +1475,8 @@
           background: #fff;
           border: none;
           color: #f96d00; }
+        #indiv_center .user_con .public_news .public_news_con .public_news_con_select_all .public_news_con_select_all_click {
+          cursor: pointer; }
       #indiv_center .user_con .public_news .public_news_con .public_news_con_list li {
         display: block;
         box-shadow: none;
@@ -1485,6 +1487,8 @@
         margin-top: 20px; }
       #indiv_center .user_con .public_news .public_news_con .public_news_con_list li:last-child {
         border-bottom: none; }
+      #indiv_center .user_con .public_news .public_news_con .public_news_con_list .public_news_con_list_l {
+        cursor: pointer; }
       #indiv_center .user_con .public_news .public_news_con .public_news_con_list .public_news_con_list_r span {
         font-size: 12px; }
       #indiv_center .user_con .public_news .public_news_con .public_news_con_list .public_news_con_list_r button {
@@ -1501,5 +1505,15 @@
         height: 16px;
         background: #c6c6c6;
         margin: 6px 10px 0px 10px; }
+
+.template .recruit_detail_head {
+  border-bottom: 1px solid #dadada; }
+.template .freedom {
+  height: 2000px; }
+  .template .freedom h2 {
+    margin-top: 500px;
+    text-align: center;
+    font-size: 64px;
+    color: #333; }
 
 /*# sourceMappingURL=index.css.map */

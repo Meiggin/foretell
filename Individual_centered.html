@@ -462,8 +462,11 @@
                         </div>
                         <div class="public_news_con">
                             <div class="public_news_con_select_all clear">
-                                <img src="./img/new_active.png" alt="" class="left margin-right-10">
-                                <span class="left">全部</span>
+                                <div class="public_news_con_select_all_click clear left">
+                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                    <span class="left">全部</span>
+                                </div>
+                                
                                 <button class="right">删除</button>
                             </div>
                             <ul class="public_news_con_list clear">
@@ -564,8 +567,11 @@
                     <li class="public_news">
                         <div class="public_news_con">
                             <div class="public_news_con_select_all clear">
-                                <img src="./img/new_active.png" alt="" class="left margin-right-10">
-                                <span class="left">全部</span>
+                                <div class="public_news_con_select_all_click clear left">
+                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                    <span class="left">全部</span>
+                                </div>
+                                
                                 <button class="right">删除</button>
                             </div>
                             <ul class="public_news_con_list clear">
@@ -685,8 +691,11 @@
                     <li class="public_news">
                         <div class="public_news_con">
                             <div class="public_news_con_select_all clear">
-                                <img src="./img/new_active.png" alt="" class="left margin-right-10">
-                                <span class="left">全部</span>
+                                <div class="public_news_con_select_all_click clear left">
+                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                    <span class="left">全部</span>
+                                </div>
+                                
                                 <button class="right">删除</button>
                             </div>
                             <ul class="public_news_con_list clear">
@@ -1118,8 +1127,11 @@
                             </div>
                             <div class="public_news_con">
                                 <div class="public_news_con_select_all clear">
-                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
-                                    <span class="left">全部</span>
+                                    <div class="public_news_con_select_all_click clear left">
+                                        <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    
                                     <button class="right">删除</button>
                                 </div>
                                 <ul class="public_news_con_list clear">
@@ -1220,8 +1232,11 @@
                         <li class="public_news">
                             <div class="public_news_con">
                                 <div class="public_news_con_select_all clear">
-                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
-                                    <span class="left">全部</span>
+                                    <div class="public_news_con_select_all_click clear left">
+                                        <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    
                                     <button class="right">删除</button>
                                 </div>
                                 <ul class="public_news_con_list clear">
@@ -1341,8 +1356,11 @@
                         <li class="public_news">
                             <div class="public_news_con">
                                 <div class="public_news_con_select_all clear">
-                                    <img src="./img/new_active.png" alt="" class="left margin-right-10">
-                                    <span class="left">全部</span>
+                                    <div class="public_news_con_select_all_click clear left">
+                                        <img src="./img/new_active.png" alt="" class="left margin-right-10">
+                                        <span class="left">全部</span>
+                                    </div>
+                                    
                                     <button class="right">删除</button>
                                 </div>
                                 <ul class="public_news_con_list clear">
@@ -1555,6 +1573,23 @@
             //我的消息点击
             $('.public_news_title span').on('click',function(){
                 $(this).addClass('active').siblings('.public_news_title span').removeClass('active')
+            })
+            //点击全部
+            $('.public_news_con_select_all_click').on('click',function(){
+                if($('.public_news_con_list li .public_news_con_list_l img').attr('src') == './img/new_active.png'){
+                    $('.public_news_con_list li .public_news_con_list_l img').attr('src','./img/new.png')
+                }else{
+                    $('.public_news_con_list li .public_news_con_list_l img').attr('src','./img/new_active.png')
+                }
+                
+            })
+            // 点击单个
+            $('.public_news_con_list_l').on('click',function(){
+                if($(this).find('img').attr('src') == './img/new_active.png'){
+                    $(this).find('img').attr('src','./img/new.png')
+                }else{
+                    $(this).find('img').attr('src','./img/new_active.png')
+                }
             })
             //判断分页------------------------------
             //普通用户我的信息分页
