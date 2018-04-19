@@ -127,7 +127,7 @@
                 <li>
                     <a href="#"><img src="./img/skill.png" alt=""></a>
                 </li>
-                <li class="margin-right-0">
+                <li>
                     <a href="#"><img src="./img/skill.png" alt=""></a>
                 </li>
             </ul>
@@ -277,12 +277,15 @@
         </div>
     </div>
     <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $('.skill_tabs_tag li').on('click',function(){
                 $(this).addClass('active').siblings('.skill_tabs_tag li').removeClass('active')
             })
+            // ie 兼容
+            $('.advantage ul li:nth-child(3n+1)').css('margin-right','0')
             $('.skill_tabs_guide li:last').css('margin-right','0')
         })
     </script>

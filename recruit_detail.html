@@ -287,10 +287,25 @@
         </div>
     </div>
     <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/paging.js"></script>
     <script>
         $(function(){
+            if (window.ActiveXObject || "ActiveXObject" in window){
+
+            // alert("ie")
+
+            $('.recruit_detail_head_title_search_r input').each(function(){
+                var pla = $(this).attr('placeholder')
+                $(this).val(pla)
+            })
+            $('.recruit_detail_head_title_search_r button').css('height','68px')
+            }else{
+
+            // alert("not ie")
+
+            }
             $('.recruit_rank ul li').on('click',function(){
                 $(this).addClass('active').siblings('.recruit_rank ul li').removeClass('active')
             })

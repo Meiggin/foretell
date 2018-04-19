@@ -76,7 +76,7 @@
             <div class="elite_search_input clear">
                 <ul>
                     <li>
-                        <input type="text" class="form-control" placeholder="研究生">
+                        <input type="text" class="form-control" placeholder="研究生" value="">
                     </li>
                     <li>
                         <select class="form-control form_default">
@@ -381,10 +381,25 @@
         </div>
     </div>
     <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/paging.js"></script>
     <script>
         $(function(){
+            if (window.ActiveXObject || "ActiveXObject" in window){
+
+                // alert("ie")
+
+                $('.elite_search_input ul li input').each(function(){
+                    var pla = $(this).attr('placeholder')
+                    $(this).val(pla)
+                })
+                $('.elite_search_input ul li select').css('height','48px')
+            }else{
+
+                // alert("not ie")
+
+            }
             $('.skill_tabs_tag li').on('click',function(){
                 $(this).addClass('active').siblings('.skill_tabs_tag li').removeClass('active')
             })

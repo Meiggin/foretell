@@ -6,6 +6,7 @@
     <meta name="renderer" content="webkit">
     <title>招生详情</title>
     <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/jquery-1.9.1.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">    
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/public.css">
@@ -1519,7 +1520,29 @@
         $(function(){
             // ie 兼容
             $('input').css('height','38px')
+            if (window.ActiveXObject || "ActiveXObject" in window){
 
+            // alert("ie")
+
+            $('.elite_search_input ul li input').each(function(){
+                var pla = $(this).attr('placeholder')
+                $(this).val(pla)
+            })
+            $('select').css('height','40px')
+            $('select').css('width','267px')
+            $('#indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2 li input').css('width','213px')
+            $('#indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2 li input').css('width','213px')
+            $('#indiv_center .user_con .general_user ul .general_user_ertified .general_user_ertified_form2').css('padding-left','42px')
+            $('#indiv_center .user_con .elite_users ul .elite_users_ertified .elite_users_ertified_form2').css('padding-left','42px')
+            $('#indiv_center .user_con .public_release .public_release_c .intro_teacher_card_form_select .intro_teacher_card_form_select_input select').css({
+                width:'88px',
+                height:'36px'
+            })
+            }else{
+            
+            // alert("not ie")
+
+            }
 
             $('.recruit_rank ul li').on('click',function(){
                 $(this).addClass('active').siblings('.recruit_rank ul li').removeClass('active')
