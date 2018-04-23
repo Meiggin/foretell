@@ -967,6 +967,8 @@
     #indiv_center .users_nav .user_nav_con ul .active {
       background: #5c636e;
       color: #fff; }
+      #indiv_center .users_nav .user_nav_con ul .active a {
+        color: #fff; }
 #indiv_center .user_con {
   width: 910px;
   margin-top: 100px; }

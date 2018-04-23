@@ -1316,6 +1316,9 @@
                 .active{
                     background: #5c636e;
                     color: #fff;
+                    a{
+                        color: #fff;
+                    }
                 }
             }
         }
@@ -2065,7 +2068,7 @@
 }
 
 
-//ie select兼容问题
+//ie select兼容问题/(ㄒoㄒ)/~~
 .select_div{
     margin-left:20px;
     background:#000
